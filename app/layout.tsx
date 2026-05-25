@@ -24,7 +24,10 @@ const spaceMono = Space_Mono({
   display: "swap",
 })
 
+const BASE_URL = "https://technospermia.com"
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
     default: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
     template: "%s — Technospermia",
@@ -36,23 +39,88 @@ export const metadata: Metadata = {
     "psychospermia",
     "panspermia",
     "psilocybin space",
-    "psychedelics consciousness",
-    "alien technology",
-    "psilocybin meteorites",
-    "fungi network",
-    "DMT consciousness",
-    "directed panspermia",
-    "astrobiology",
-    "cosmic seeding",
+    "psilocybin meteorite",
+    "psychedelics alien technology",
+    "are mushrooms alien",
+    "psilocybin consciousness",
+    "cannabis alien origin",
+    "DMT endogenous",
+    "fungi ancient technology",
+    "mycorrhizal network intelligence",
+    "psychedelics engineered",
+    "consciousness expansion alien",
+    "overview effect psilocybin",
+    "fermi paradox psychedelics",
+    "astrobiology consciousness",
+    "alien seeding theory",
+    "psychedelic renaissance 2024 2025",
+    "psilocybin therapy research",
+    "cannabis receptor system alien",
+    "caffeine adenosine alien tech",
+    "are psychedelics natural",
+    "universe consciousness technology",
+    "good vs evil universe theory",
+    "advanced civilization seeding",
+    "technospermia theory",
+    "psychospermia definition",
+    "psilocybin organic compounds space",
+    "fungi older than plants",
+    "tardigrade space survival",
+    "panspermia evidence 2024",
   ],
+  alternates: {
+    canonical: BASE_URL,
+  },
   openGraph: {
     type: "website",
     siteName: "Technospermia",
     title: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
     description:
       "What if psychedelics, plants, and fungi aren't naturally evolved — but engineered technologies seeded across the universe?",
+    url: BASE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
+    description:
+      "What if psychedelics, plants, and fungi aren't naturally evolved — but engineered technologies seeded across the universe?",
   },
   robots: { index: true, follow: true },
+}
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${BASE_URL}/#website`,
+      url: BASE_URL,
+      name: "Technospermia",
+      description:
+        "A speculative theory proposing that psychedelics, fungi, and consciousness-altering plants are engineered biological technologies seeded across the universe.",
+    },
+    {
+      "@type": "Article",
+      "@id": `${BASE_URL}/#article`,
+      headline: "Technospermia & Psychospermia: A Theory of Consciousness Technology",
+      description:
+        "A speculative theory proposing that psychedelics, fungi, and consciousness-altering plants are engineered biological technologies seeded across the universe by advanced civilizations.",
+      keywords:
+        "technospermia, psychospermia, panspermia, psilocybin, consciousness, alien technology, fungi networks",
+      author: {
+        "@type": "Person",
+        name: "Dylan Rhodes",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Technospermia",
+        url: BASE_URL,
+      },
+      datePublished: "2026-05-24",
+      dateModified: "2026-05-24",
+      url: BASE_URL,
+    },
+  ],
 }
 
 export default function RootLayout({
@@ -65,6 +133,12 @@ export default function RootLayout({
       lang="en"
       className={`${spaceGrotesk.variable} ${inter.variable} ${spaceMono.variable}`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         <Suspense fallback={null}>
           <StarfieldWrapper />

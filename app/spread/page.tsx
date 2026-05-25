@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import ScrollReveal from "@/components/ScrollReveal"
 import ShareButtons from "@/components/ShareButtons"
+import ShareableCards from "@/components/ShareableCards"
 
 const SITE_URL = "https://technospermia.com"
 
@@ -218,6 +219,11 @@ export default function SpreadPage() {
       <ScrollReveal delay={0.1}>
         <ShareButtons large />
       </ScrollReveal>
+
+      {/* Shareable cards — Weapons for the Signal */}
+      <div className="mt-28">
+        <ShareableCards />
+      </div>
 
       {/* Pre-written hooks */}
       <div className="mt-24">

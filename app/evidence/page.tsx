@@ -4,9 +4,16 @@ import EvidenceCard, { EvidenceItem } from "@/components/EvidenceCard"
 import Timeline from "@/components/Timeline"
 
 export const metadata: Metadata = {
-  title: "The Evidence",
+  title: "The Evidence — Psilocybin in Space & The Science Behind Technospermia",
   description:
-    "Psilocybin in space, fungi older than plants, DMT in mammalian brains. The scientific findings that rhyme with the Technospermia theory.",
+    "Psilocybin in space, fungi older than plants, DMT in mammalian brains — real scientific findings that rhyme with the Technospermia theory. The data is interesting.",
+  alternates: { canonical: "https://technospermia.com/evidence" },
+  openGraph: {
+    title: "The Evidence — Psilocybin in Space & The Science Behind Technospermia",
+    description:
+      "Organic compounds in meteorites, mycorrhizal networks, the Overview Effect — the scientific findings that rhyme with the Technospermia theory.",
+    url: "https://technospermia.com/evidence",
+  },
 }
 
 const CARDS: EvidenceItem[] = [

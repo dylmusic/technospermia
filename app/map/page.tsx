@@ -3,9 +3,16 @@ import ScrollReveal from "@/components/ScrollReveal"
 import NodeGraph from "@/components/NodeGraph"
 
 export const metadata: Metadata = {
-  title: "The Map",
+  title: "The Map — How Consciousness Technology Connects Across the Universe",
   description:
-    "An interactive concept map of the Technospermia theory — how panspermia, psychedelics, consciousness, advanced civilizations, and fungi networks connect.",
+    "An interactive concept map of the Technospermia theory — how panspermia, psychedelics, consciousness, advanced civilizations, and fungi networks all connect.",
+  alternates: { canonical: "https://technospermia.com/map" },
+  openGraph: {
+    title: "The Map — How Consciousness Technology Connects Across the Universe",
+    description:
+      "Click any node to explore: Psychospermia, Panspermia, Psychedelics, Fungi Networks, Advanced Civilizations, and the logic chain between them.",
+    url: "https://technospermia.com/map",
+  },
 }
 
 const LOGIC_CHAIN = [

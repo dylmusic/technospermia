@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
   description:
     "What if psychedelics, plants, and fungi aren't naturally evolved — but engineered technologies seeded across the universe to alter consciousness? A theory of technospermia and psychospermia.",
+  alternates: { canonical: "https://technospermia.com" },
+  openGraph: {
+    title: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
+    description:
+      "What if psychedelics, plants, and fungi aren't naturally evolved — but engineered technologies seeded across the universe to alter consciousness?",
+    url: "https://technospermia.com",
+  },
 }
 
 const QUESTION_LINES = [
