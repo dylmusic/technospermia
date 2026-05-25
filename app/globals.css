@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Color system */
+  --color-void: #05050F;
+  --color-accent-violet: #7B5EA7;
+  --color-accent-violet-dim: #4A3A69;
+  --color-accent-teal: #1ECFB0;
+  --color-accent-amber: #E8C872;
+  --color-danger: #C0392B;
+  --color-cream: #F0EEE8;
+  --color-muted: #8A8A9A;
+
+  /* Typography */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-space-mono);
+  --font-grotesk: var(--font-space-grotesk);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Glass card utility */
+@utility glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility glow-violet {
+  box-shadow: 0 0 80px rgba(123, 94, 167, 0.35), 0 0 160px rgba(123, 94, 167, 0.1);
+}
+
+@utility glow-teal {
+  box-shadow: 0 0 80px rgba(30, 207, 176, 0.3), 0 0 160px rgba(30, 207, 176, 0.1);
+}
+
+@utility glow-amber {
+  box-shadow: 0 0 80px rgba(232, 200, 114, 0.3), 0 0 160px rgba(232, 200, 114, 0.1);
+}
+
+/* Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: #F0EEE8;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Glass fallback for browsers without backdrop-filter */
+@supports not (backdrop-filter: blur(12px)) {
+  .glass {
+    background: rgba(5, 5, 15, 0.88);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #7B5EA7;
+  border-radius: 2px;
+}
+
+/* Selection */
+::selection {
+  background: rgba(123, 94, 167, 0.4);
+  color: #F0EEE8;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
