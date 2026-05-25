@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import ScrollReveal from "@/components/ScrollReveal"
-import NodeGraph from "@/components/NodeGraph"
+import NodeGraphWrapper from "@/components/NodeGraphWrapper"
 
 export const metadata: Metadata = {
   title: "The Map — How Consciousness Technology Connects Across the Universe",
@@ -76,7 +76,7 @@ export default function MapPage() {
 
       {/* Interactive graph */}
       <ScrollReveal>
-        <NodeGraph />
+        <NodeGraphWrapper />
       </ScrollReveal>
 
       {/* Logic chain */}

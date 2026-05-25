@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, useReducedMotion } from "framer-motion"
-import { ReactNode } from "react"
+import { ReactNode, useEffect, useState } from "react"
 
 interface Props {
   children: ReactNode
@@ -19,8 +19,16 @@ export default function ScrollReveal({
   amount = 0.2,
 }: Props) {
   const reduce = useReducedMotion()
+  const [mobile, setMobile] = useState(false)
 
-  const initial = reduce
+  useEffect(() => {
+    setMobile(window.innerWidth < 768 || navigator.maxTouchPoints > 0)
+  }, [])
+
+  // Mobile + reduced-motion: just fade, no transforms, fast
+  const simple = reduce || mobile
+
+  const initial = simple
     ? { opacity: 0 }
     : {
         opacity: 0,
@@ -34,7 +42,11 @@ export default function ScrollReveal({
       initial={initial}
       whileInView={{ opacity: 1, y: 0, x: 0 }}
       viewport={{ once: true, amount }}
-      transition={{ duration: 0.75, delay, ease: [0.16, 1, 0.3, 1] }}
+      transition={{
+        duration: simple ? 0.25 : 0.75,
+        delay: simple ? Math.min(delay * 0.4, 0.08) : delay,
+        ease: "easeOut",
+      }}
     >
       {children}
     </motion.div>
