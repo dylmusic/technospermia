@@ -6,13 +6,21 @@ import Timeline from "@/components/Timeline"
 export const metadata: Metadata = {
   title: "The Evidence — Psilocybin in Space & The Science Behind Technospermia",
   description:
-    "Psilocybin in space, fungi older than plants, DMT in mammalian brains — real scientific findings that rhyme with the Technospermia theory. The data is interesting.",
+    "Psilocybin in space, fungi older than plants, DMT found in mammalian brains — real science that rhymes with the Technospermia theory. Each finding is independently verified.",
   alternates: { canonical: "https://www.technospermia.com/evidence" },
   openGraph: {
+    type: "website",
     title: "The Evidence — Psilocybin in Space & The Science Behind Technospermia",
     description:
-      "Organic compounds in meteorites, mycorrhizal networks, the Overview Effect — the scientific findings that rhyme with the Technospermia theory.",
+      "Organic compounds in meteorites, mycorrhizal networks, the Overview Effect — scientific findings that rhyme with the Technospermia theory.",
     url: "https://www.technospermia.com/evidence",
+    images: [{ url: "https://www.technospermia.com/og?title=The+Evidence&category=ASTROBIOLOGY", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Evidence — Psilocybin in Space & The Science Behind Technospermia",
+    description: "Real science that rhymes with the Technospermia theory: psilocybin in space, DMT in mammalian brains, organic compounds in meteorites.",
+    images: ["https://www.technospermia.com/og?title=The+Evidence&category=ASTROBIOLOGY"],
   },
 }
 

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s — Technospermia",
   },
   description:
-    "What if psychedelics, plants, and fungi aren't naturally evolved — but engineered technologies seeded across the universe to alter consciousness? A theory of technospermia and psychospermia.",
+    "Technospermia: the theory that psychedelic plants and fungi are not randomly evolved — they're engineered biological technologies seeded across the universe by advanced civilizations.",
   keywords: [
     "technospermia",
     "psychospermia",
@@ -77,14 +77,16 @@ export const metadata: Metadata = {
     siteName: "Technospermia",
     title: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
     description:
-      "What if psychedelics, plants, and fungi aren't naturally evolved — but engineered technologies seeded across the universe?",
+      "Technospermia: the theory that psychedelic plants and fungi are engineered biological technologies seeded across the universe by advanced civilizations.",
     url: BASE_URL,
+    images: [{ url: `${BASE_URL}/og?title=Technospermia+%26+Psychospermia&type=homepage`, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
     description:
-      "What if psychedelics, plants, and fungi aren't naturally evolved — but engineered technologies seeded across the universe?",
+      "Technospermia: the theory that psychedelic plants and fungi are engineered biological technologies seeded across the universe by advanced civilizations.",
+    images: [`${BASE_URL}/og?title=Technospermia+%26+Psychospermia&type=homepage`],
   },
   robots: { index: true, follow: true },
 }

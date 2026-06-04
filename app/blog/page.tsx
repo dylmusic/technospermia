@@ -6,13 +6,21 @@ import ScrollReveal from "@/components/ScrollReveal"
 export const metadata: Metadata = {
   title: "Transmissions — Signals from the Research",
   description:
-    "Deep dives into technospermia, psychospermia, psilocybin origins, consciousness research, and astrobiology. The evidence, the theory, and the implications.",
+    "Deep dives into technospermia, psychospermia, psilocybin origins, consciousness research, and astrobiology. The evidence, the theory, and the implications explained.",
   alternates: { canonical: "https://www.technospermia.com/blog" },
   openGraph: {
+    type: "website",
     title: "Transmissions — Signals from the Research",
     description:
       "Deep dives into technospermia, psychospermia, psilocybin origins, consciousness research, and astrobiology.",
     url: "https://www.technospermia.com/blog",
+    images: [{ url: "https://www.technospermia.com/og?title=Transmissions&category=THEORY", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Transmissions — Signals from the Research",
+    description: "Deep dives into technospermia, psilocybin origins, consciousness research, and astrobiology. The evidence and the theory explained.",
+    images: ["https://www.technospermia.com/og?title=Transmissions&category=THEORY"],
   },
 }
 

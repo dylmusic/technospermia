@@ -5,13 +5,21 @@ import NodeGraphWrapper from "@/components/NodeGraphWrapper"
 export const metadata: Metadata = {
   title: "The Map — How Consciousness Technology Connects Across the Universe",
   description:
-    "An interactive concept map of the Technospermia theory — how panspermia, psychedelics, consciousness, advanced civilizations, and fungi networks all connect.",
+    "An interactive concept map of the Technospermia theory — panspermia, psychedelics, consciousness, advanced civilizations, and fungi networks, with the logic chain between them.",
   alternates: { canonical: "https://www.technospermia.com/map" },
   openGraph: {
+    type: "website",
     title: "The Map — How Consciousness Technology Connects Across the Universe",
     description:
       "Click any node to explore: Psychospermia, Panspermia, Psychedelics, Fungi Networks, Advanced Civilizations, and the logic chain between them.",
     url: "https://www.technospermia.com/map",
+    images: [{ url: "https://www.technospermia.com/og?title=The+Map&category=THEORY", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Map — How Consciousness Technology Connects Across the Universe",
+    description: "Interactive concept map: panspermia, psychedelics, consciousness, fungi networks, advanced civilizations — and the logic chain between them.",
+    images: ["https://www.technospermia.com/og?title=The+Map&category=THEORY"],
   },
 }
 

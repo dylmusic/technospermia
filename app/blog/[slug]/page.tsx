@@ -18,15 +18,27 @@ export async function generateMetadata({
   const { slug } = await params
   const meta = getPostBySlug(slug)
   if (!meta) return {}
+  const ogImage = `https://www.technospermia.com/og?title=${encodeURIComponent(meta.title)}&category=${meta.category}`
   return {
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
     alternates: { canonical: `https://www.technospermia.com/blog/${slug}` },
     openGraph: {
+      type: "article",
       title: meta.title,
       description: meta.description,
       url: `https://www.technospermia.com/blog/${slug}`,
+      images: [{ url: ogImage, width: 1200, height: 630 }],
+      publishedTime: meta.date,
+      authors: ["Dylan Rhodes"],
+      section: meta.category,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
+      images: [ogImage],
     },
   }
 }
@@ -46,9 +58,43 @@ export default async function BlogPostPage({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { default: Content } = (await import(`@/content/blog/${slug}.mdx`)) as any
 
+  const ogImageUrl = `https://www.technospermia.com/og?title=${encodeURIComponent(meta.title)}&category=${meta.category}`
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: meta.title,
+    description: meta.description,
+    author: {
+      "@type": "Person",
+      name: "Dylan Rhodes",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Technospermia",
+      url: "https://www.technospermia.com",
+    },
+    datePublished: meta.date,
+    dateModified: meta.date,
+    url: `https://www.technospermia.com/blog/${slug}`,
+    image: ogImageUrl,
+    keywords: meta.keywords.join(", "),
+    articleSection: meta.category,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.technospermia.com/blog/${slug}`,
+    },
+  }
+
   return (
-    <BlogPost meta={meta} relatedPosts={related}>
-      <Content />
-    </BlogPost>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <BlogPost meta={meta} relatedPosts={related}>
+        <Content />
+      </BlogPost>
+    </>
   )
 }
