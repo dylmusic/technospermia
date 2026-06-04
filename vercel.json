@@ -1,1 +1,11 @@
-{"framework": "nextjs"}
+{
+  "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "technospermia.com" }],
+      "destination": "https://www.technospermia.com/:path*",
+      "permanent": true
+    }
+  ]
+}
