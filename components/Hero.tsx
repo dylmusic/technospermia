@@ -1,10 +1,14 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, type ReactNode } from "react"
 import { motion, useReducedMotion } from "framer-motion"
 import { trackEvent } from "@/lib/analytics"
 
-export default function Hero() {
+interface HeroProps {
+  articleRow?: ReactNode
+}
+
+export default function Hero({ articleRow }: HeroProps) {
   const reduce = useReducedMotion()
 
   useEffect(() => {
@@ -19,7 +23,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative flex flex-col items-center justify-center text-center px-6"
+      className="relative flex flex-col items-center text-center px-6"
       style={{ minHeight: "100svh" }}
     >
       {/* Violet glow behind title */}
@@ -36,30 +40,45 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 space-y-4">
-        <motion.h1
-          {...fade(0.3)}
-          className="font-grotesk font-bold leading-none tracking-[0.08em]"
-          style={{ fontSize: "clamp(2.5rem, 10vw, 7rem)", color: "#F0EEE8" }}
-        >
-          TECHNOSPERMIA
-        </motion.h1>
+      {/* Title area — flex-1 so it takes remaining space and centers its content */}
+      <div className="flex-1 flex items-center justify-center relative z-10 w-full">
+        <div className="space-y-4">
+          <motion.h1
+            {...fade(0.3)}
+            className="font-grotesk font-bold leading-none tracking-[0.08em]"
+            style={{ fontSize: "clamp(2.5rem, 10vw, 7rem)", color: "#F0EEE8" }}
+          >
+            TECHNOSPERMIA
+          </motion.h1>
 
-        <motion.p
-          {...fade(0.7)}
-          className="font-grotesk font-light tracking-[0.12em]"
-          style={{ fontSize: "clamp(1.2rem, 4vw, 2.8rem)", color: "#7B5EA7" }}
-        >
-          &amp; PSYCHOSPERMIA
-        </motion.p>
+          <motion.p
+            {...fade(0.7)}
+            className="font-grotesk font-light tracking-[0.12em]"
+            style={{ fontSize: "clamp(1.2rem, 4vw, 2.8rem)", color: "#7B5EA7" }}
+          >
+            &amp; PSYCHOSPERMIA
+          </motion.p>
 
-        <motion.p
-          {...fade(1.1)}
-          className="font-sans text-sm md:text-base tracking-widest text-muted mt-6 max-w-md mx-auto"
-        >
-          a theory based on technology, philosophy, spirituality, and astrobiology
-        </motion.p>
+          <motion.p
+            {...fade(1.1)}
+            className="font-sans text-sm md:text-base tracking-widest text-muted mt-6 max-w-md mx-auto"
+          >
+            a theory based on technology, philosophy, spirituality, and astrobiology
+          </motion.p>
+        </div>
       </div>
+
+      {/* Article row — natural flow at bottom, above scroll indicator */}
+      {articleRow && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.6, duration: 0.8 }}
+          className="relative z-10 w-full max-w-4xl mx-auto pb-32"
+        >
+          {articleRow}
+        </motion.div>
+      )}
 
       {/* Scroll indicator */}
       <motion.div

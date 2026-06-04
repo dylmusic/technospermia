@@ -3,6 +3,10 @@ import ScrollReveal from "@/components/ScrollReveal"
 import ShareButtons from "@/components/ShareButtons"
 import Hero from "@/components/Hero"
 import TheoryScrollTracker from "@/components/TheoryScrollTracker"
+import HomepageArticlesProvider from "@/components/HomepageArticlesProvider"
+import HomepageArticleRow from "@/components/HomepageArticleRow"
+import HomepageBottomArticles from "@/components/HomepageBottomArticles"
+import { getAllPosts } from "@/lib/blog"
 
 export const metadata: Metadata = {
   title: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
@@ -74,11 +78,13 @@ const KEYWORDS = [
 ]
 
 export default function TheoryPage() {
+  const posts = getAllPosts()
   return (
+    <HomepageArticlesProvider posts={posts}>
     <div className="relative">
       <TheoryScrollTracker />
       {/* Hero */}
-      <Hero />
+      <Hero articleRow={<HomepageArticleRow />} />
 
       {/* Main content — scrollytelling */}
       <div className="px-6 md:px-12 max-w-3xl mx-auto pb-40 space-y-32">
@@ -271,7 +277,11 @@ export default function TheoryPage() {
             </p>
           </ScrollReveal>
         </section>
+
+        {/* Bottom article previews */}
+        <HomepageBottomArticles />
       </div>
     </div>
+    </HomepageArticlesProvider>
   )
 }

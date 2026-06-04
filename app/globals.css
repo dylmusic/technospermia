@@ -81,6 +81,15 @@ body {
   color: #F0EEE8;
 }
 
+/* Hide scrollbar utility — used for horizontal scroll snap rows */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html {

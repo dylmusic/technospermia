@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { getAllPosts } from "@/lib/blog"
-import BlogCard from "@/components/blog/BlogCard"
+import BlogPostGrid from "@/components/blog/BlogPostGrid"
 import ScrollReveal from "@/components/ScrollReveal"
 
 export const metadata: Metadata = {
@@ -44,20 +44,7 @@ export default function BlogPage() {
         </ScrollReveal>
       </div>
 
-      {/* Post grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {posts.map((post, i) => (
-          <ScrollReveal key={post.slug} delay={i * 0.08}>
-            <BlogCard post={post} />
-          </ScrollReveal>
-        ))}
-      </div>
-
-      {posts.length === 0 && (
-        <div className="text-center py-20">
-          <p className="font-mono text-sm text-muted/50 tracking-widest">NO TRANSMISSIONS YET</p>
-        </div>
-      )}
+      <BlogPostGrid posts={posts} />
     </div>
   )
 }
