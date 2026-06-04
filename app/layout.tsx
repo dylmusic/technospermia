@@ -24,7 +24,7 @@ const spaceMono = Space_Mono({
   display: "swap",
 })
 
-const BASE_URL = "https://technospermia.com"
+const BASE_URL = "https://www.technospermia.com"
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
