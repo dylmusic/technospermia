@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { trackEvent } from "@/lib/analytics"
 
 export interface EvidenceItem {
   title: string
@@ -17,7 +18,11 @@ export default function EvidenceCard({ item }: { item: EvidenceItem }) {
   return (
     <div
       className="glass cursor-pointer select-none"
-      onClick={() => setExpanded((v) => !v)}
+      onClick={() => {
+        const next = !expanded
+        setExpanded(next)
+        if (next) trackEvent("evidence_card_expanded", { card_title: item.title })
+      }}
       onMouseEnter={() => setExpanded(true)}
       onMouseLeave={() => setExpanded(false)}
       role="button"

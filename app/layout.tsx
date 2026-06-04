@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Space_Grotesk, Inter, Space_Mono } from "next/font/google"
 import { Suspense } from "react"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import "./globals.css"
 import Nav from "@/components/Nav"
 import StarfieldWrapper from "@/components/StarfieldWrapper"
@@ -146,6 +147,7 @@ export default function RootLayout({
         <Nav />
         <main className="relative z-10 min-h-screen">{children}</main>
       </body>
+      <GoogleAnalytics gaId="G-6R6ZK7CNKX" />
     </html>
   )
 }

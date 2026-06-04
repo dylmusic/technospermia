@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import EntityCard, { Entity } from "@/components/EntityCard"
 import ScrollReveal from "@/components/ScrollReveal"
+import { trackEvent } from "@/lib/analytics"
 
 const ENTITIES: Entity[] = [
   {
@@ -129,7 +130,10 @@ export default function EntitiesPage() {
         {FILTERS.map(({ key, label }) => (
           <button
             key={key}
-            onClick={() => setFilter(key)}
+            onClick={() => {
+              setFilter(key)
+              trackEvent("entity_filter_used", { filter: label })
+            }}
             className="font-grotesk text-xs tracking-widest uppercase px-4 py-2.5 rounded-full transition-all duration-200 min-h-[44px]"
             style={{
               background: filter === key ? "rgba(123,94,167,0.2)" : "rgba(255,255,255,0.04)",

@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react"
 import { motion } from "framer-motion"
+import { trackEvent } from "@/lib/analytics"
 
 interface CardData {
   id: number
@@ -87,6 +88,7 @@ function ShareCard({ card }: { card: CardData }) {
   const download = async () => {
     if (!cardRef.current || downloading) return
     setDownloading(true)
+    trackEvent("share_card_downloaded", { card_number: card.id })
     try {
       const html2canvas = (await import("html2canvas")).default
       const canvas = await html2canvas(cardRef.current, {
@@ -109,6 +111,7 @@ function ShareCard({ card }: { card: CardData }) {
   const copyCaption = async () => {
     try {
       await navigator.clipboard.writeText(card.caption)
+      trackEvent("share_caption_copied", { card_number: card.id })
       setCopied(true)
       setTimeout(() => setCopied(false), 2200)
     } catch {

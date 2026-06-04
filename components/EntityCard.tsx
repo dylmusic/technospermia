@@ -1,4 +1,7 @@
-import { ReactNode } from "react"
+"use client"
+
+import { useEffect, useRef } from "react"
+import { trackEvent } from "@/lib/analytics"
 
 export interface Entity {
   name: string
@@ -45,8 +48,27 @@ function BackgroundGlyph({ category }: { category: Entity["category"] }) {
 }
 
 export default function EntityCard({ entity }: { entity: Entity }) {
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          trackEvent("entity_card_viewed", { entity_name: entity.name })
+          obs.disconnect()
+        }
+      },
+      { threshold: 0.5 }
+    )
+    obs.observe(el)
+    return () => obs.disconnect()
+  }, [entity.name])
+
   return (
     <div
+      ref={ref}
       className="glass relative overflow-hidden h-full"
       style={{ borderTop: `2px solid ${entity.accent}30` }}
     >

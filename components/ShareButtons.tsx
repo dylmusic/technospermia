@@ -1,8 +1,9 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { trackEvent } from "@/lib/analytics"
 
-const SITE_URL = "https://technospermia.com"
+const SITE_URL = "https://www.technospermia.com"
 const TWEET_TEXT =
   "What if psychedelics, plants, and fungi aren't naturally evolved — but engineered technologies seeded across the universe to alter consciousness? technospermia.com"
 
@@ -17,6 +18,7 @@ export default function ShareButtons({ large = false }: { large?: boolean }) {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(SITE_URL)
+      trackEvent("share_button_click", { method: "copy" })
       setCopied(true)
       setTimeout(() => setCopied(false), 2200)
     } catch {
@@ -25,11 +27,13 @@ export default function ShareButtons({ large = false }: { large?: boolean }) {
   }
 
   const handleTwitter = () => {
+    trackEvent("share_button_click", { method: "twitter" })
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(TWEET_TEXT)}`
     window.open(url, "_blank", "noopener,noreferrer")
   }
 
   const handleNativeShare = () => {
+    trackEvent("share_button_click", { method: "native" })
     navigator.share?.({
       title: "Technospermia & Psychospermia",
       text: "A theory of consciousness technology seeded across the universe.",

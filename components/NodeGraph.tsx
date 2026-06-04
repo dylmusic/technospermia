@@ -1,7 +1,8 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { trackEvent } from "@/lib/analytics"
 
 interface Node {
   id: string
@@ -131,7 +132,18 @@ export default function NodeGraph() {
   const [selected, setSelected] = useState<string | null>(null)
   const selectedNode = selected ? NODES.find((n) => n.id === selected) : null
 
-  const handleNode = (id: string) => setSelected(selected === id ? null : id)
+  useEffect(() => {
+    trackEvent("map_page_viewed")
+  }, [])
+
+  const handleNode = (id: string) => {
+    const next = selected === id ? null : id
+    setSelected(next)
+    if (next) {
+      const node = NODES.find((n) => n.id === id)
+      if (node) trackEvent("node_clicked", { node_name: node.label.replace("\n", " ") })
+    }
+  }
 
   return (
     <div>

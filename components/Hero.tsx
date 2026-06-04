@@ -1,9 +1,16 @@
 "use client"
 
+import { useEffect } from "react"
 import { motion, useReducedMotion } from "framer-motion"
+import { trackEvent } from "@/lib/analytics"
 
 export default function Hero() {
   const reduce = useReducedMotion()
+
+  useEffect(() => {
+    const device = window.innerWidth < 768 || navigator.maxTouchPoints > 0 ? "mobile" : "desktop"
+    trackEvent("hero_loaded", { device })
+  }, [])
 
   const fade = (delay: number) =>
     reduce

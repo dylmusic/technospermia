@@ -5,8 +5,9 @@ import { motion, AnimatePresence } from "framer-motion"
 import ScrollReveal from "@/components/ScrollReveal"
 import ShareButtons from "@/components/ShareButtons"
 import ShareableCards from "@/components/ShareableCards"
+import { trackEvent } from "@/lib/analytics"
 
-const SITE_URL = "https://technospermia.com"
+const SITE_URL = "https://www.technospermia.com"
 
 const SHARE_HOOKS = [
   {
@@ -56,6 +57,7 @@ function SubmissionSection() {
       ts: Date.now(),
     }
 
+    trackEvent("community_theory_submitted")
     const next = [entry, ...submissions].slice(0, 20)
     setSubmissions(next)
     try {
@@ -139,6 +141,7 @@ function EmailSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!email.trim()) return
+    trackEvent("email_signup_submitted")
     setDone(true)
   }
 

@@ -1,4 +1,8 @@
+"use client"
+
+import { useEffect, useRef } from "react"
 import ScrollReveal from "@/components/ScrollReveal"
+import { trackEvent } from "@/lib/analytics"
 
 interface TimelineEvent {
   year: string
@@ -23,6 +27,24 @@ const EVENTS: TimelineEvent[] = [
 ]
 
 export default function Timeline() {
+  const sentinelRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const el = sentinelRef.current
+    if (!el) return
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          trackEvent("timeline_scrolled")
+          obs.disconnect()
+        }
+      },
+      { threshold: 0.5 }
+    )
+    obs.observe(el)
+    return () => obs.disconnect()
+  }, [])
+
   return (
     <div className="relative max-w-2xl mx-auto">
       {/* Vertical line */}
@@ -34,7 +56,7 @@ export default function Timeline() {
       <div className="space-y-8">
         {EVENTS.map((event, i) => (
           <ScrollReveal key={i} delay={i * 0.04}>
-            <div className="flex items-start gap-6">
+            <div ref={i === EVENTS.length - 1 ? sentinelRef : undefined} className="flex items-start gap-6">
               {/* Year */}
               <div className="w-28 md:w-36 shrink-0 text-right pt-0.5">
                 <span

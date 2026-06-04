@@ -2,17 +2,18 @@ import type { Metadata } from "next"
 import ScrollReveal from "@/components/ScrollReveal"
 import ShareButtons from "@/components/ShareButtons"
 import Hero from "@/components/Hero"
+import TheoryScrollTracker from "@/components/TheoryScrollTracker"
 
 export const metadata: Metadata = {
   title: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
   description:
     "What if psychedelics, plants, and fungi aren't naturally evolved — but engineered technologies seeded across the universe to alter consciousness? A theory of technospermia and psychospermia.",
-  alternates: { canonical: "https://technospermia.com" },
+  alternates: { canonical: "https://www.technospermia.com" },
   openGraph: {
     title: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
     description:
       "What if psychedelics, plants, and fungi aren't naturally evolved — but engineered technologies seeded across the universe to alter consciousness?",
-    url: "https://technospermia.com",
+    url: "https://www.technospermia.com",
   },
 }
 
@@ -67,6 +68,7 @@ const KEYWORDS = [
 export default function TheoryPage() {
   return (
     <div className="relative">
+      <TheoryScrollTracker />
       {/* Hero */}
       <Hero />
 
