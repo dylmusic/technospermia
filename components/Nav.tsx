@@ -10,6 +10,7 @@ const links = [
   { href: "/evidence", label: "The Evidence" },
   { href: "/map", label: "The Map" },
   { href: "/entities", label: "The Entities" },
+  { href: "/blog", label: "Transmissions" },
   { href: "/spread", label: "Spread the Signal" },
 ]
 
