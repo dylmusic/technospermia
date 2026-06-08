@@ -12,6 +12,21 @@ export const metadata: Metadata = {
   title: "Technospermia & Psychospermia — A Theory of Consciousness Technology",
   description:
     "Technospermia: the theory that psychedelic plants and fungi are not randomly evolved — they're engineered biological technologies seeded across the universe by advanced civilizations.",
+  keywords: [
+    "technospermia conspiracy theory",
+    "psychedelics conspiracy",
+    "alien technology conspiracy",
+    "consciousness conspiracy theory",
+    "government hiding psychedelics",
+    "forbidden knowledge",
+    "hidden history consciousness",
+    "red pill consciousness",
+    "suppressed science",
+    "psychospermia conspiracy theory",
+    "are mushrooms alien technology conspiracy",
+    "war on drugs conspiracy",
+    "psychedelic suppression conspiracy",
+  ],
   alternates: { canonical: "https://www.technospermia.com" },
   openGraph: {
     type: "website",

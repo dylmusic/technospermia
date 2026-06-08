@@ -4,15 +4,27 @@ import EvidenceCard, { EvidenceItem } from "@/components/EvidenceCard"
 import Timeline from "@/components/Timeline"
 
 export const metadata: Metadata = {
-  title: "The Evidence — Psilocybin in Space & The Science Behind Technospermia",
+  title: "The Evidence — Is Technospermia Conspiracy Theory or Fact?",
   description:
-    "Psilocybin in space, fungi older than plants, DMT found in mammalian brains — real science that rhymes with the Technospermia theory. Each finding is independently verified.",
+    "Psilocybin in space, fungi older than plants, DMT in mammalian brains, government-confirmed UAPs. The evidence behind the Technospermia theory — conspiracy theory framing or documented science? You decide.",
+  keywords: [
+    "technospermia evidence",
+    "psychedelic evidence science",
+    "psilocybin space evidence",
+    "technospermia conspiracy evidence",
+    "psychedelic conspiracy evidence",
+    "alien technology evidence not conspiracy",
+    "uap evidence conspiracy theory",
+    "panspermia evidence",
+    "dmt brain science",
+    "fungi intelligence evidence",
+  ],
   alternates: { canonical: "https://www.technospermia.com/evidence" },
   openGraph: {
     type: "website",
-    title: "The Evidence — Psilocybin in Space & The Science Behind Technospermia",
+    title: "The Evidence — Is Technospermia Conspiracy Theory or Fact?",
     description:
-      "Organic compounds in meteorites, mycorrhizal networks, the Overview Effect — scientific findings that rhyme with the Technospermia theory.",
+      "Psilocybin in space, DMT in mammalian brains, government-confirmed UAPs — documented science behind the Technospermia theory.",
     url: "https://www.technospermia.com/evidence",
     images: [{ url: "https://www.technospermia.com/og?title=The+Evidence&category=ASTROBIOLOGY", width: 1200, height: 630 }],
   },

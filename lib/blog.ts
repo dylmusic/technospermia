@@ -16,6 +16,7 @@ export interface PostMeta {
   category: Category
   excerpt: string
   readingTime: string
+  tags: string[]
 }
 
 export function getAllPosts(): PostMeta[] {
@@ -35,6 +36,7 @@ export function getAllPosts(): PostMeta[] {
       category: (data.category as Category) || "THEORY",
       excerpt: (data.excerpt as string) || "",
       readingTime: rt.text,
+      tags: (data.tags as string[]) || [],
     }
   })
   return posts.sort((a, b) => (a.date < b.date ? 1 : -1))
@@ -54,6 +56,7 @@ export function getPostBySlug(slug: string): PostMeta | undefined {
       category: (data.category as Category) || "THEORY",
       excerpt: (data.excerpt as string) || "",
       readingTime: rt.text,
+      tags: (data.tags as string[]) || [],
     }
   } catch {
     return undefined

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://technospermia.com/sitemap.xml
+Sitemap: https://www.technospermia.com/sitemap.xml

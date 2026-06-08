@@ -12,6 +12,10 @@ const CATEGORY_COLORS: Record<string, string> = {
   THEORY: "#F0EEE8",
 }
 
+const TAG_COLORS: Record<string, string> = {
+  "HIDDEN HISTORY": "#8B0000",
+}
+
 export default function BlogPost({
   meta,
   children,
@@ -52,9 +56,20 @@ export default function BlogPost({
 
         {/* Article header */}
         <header className="mb-12">
-          <span className="font-mono text-xs tracking-widest uppercase" style={{ color }}>
-            {meta.category}
-          </span>
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="font-mono text-xs tracking-widest uppercase" style={{ color }}>
+              {meta.category}
+            </span>
+            {meta.tags?.map((tag) => (
+              <span
+                key={tag}
+                className="font-mono text-xs tracking-widest uppercase px-1.5 py-0.5 rounded"
+                style={{ color: "#fff", background: TAG_COLORS[tag] || "#333" }}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
 
           <h1
             className="font-grotesk font-bold tracking-wide text-cream mt-4 mb-6 leading-tight"

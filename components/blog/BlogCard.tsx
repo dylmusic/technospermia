@@ -8,6 +8,10 @@ const CATEGORY_COLORS: Record<string, string> = {
   THEORY: "#F0EEE8",
 }
 
+const TAG_COLORS: Record<string, string> = {
+  "HIDDEN HISTORY": "#8B0000",
+}
+
 export default function BlogCard({ post }: { post: PostMeta }) {
   const color = CATEGORY_COLORS[post.category] || "#F0EEE8"
   return (
@@ -16,9 +20,20 @@ export default function BlogCard({ post }: { post: PostMeta }) {
         className="glass h-full p-6 flex flex-col transition-all duration-300 group-hover:border-white/15"
         style={{ borderTop: `2px solid ${color}30` }}
       >
-        <span className="font-mono text-xs tracking-widest uppercase" style={{ color }}>
-          {post.category}
-        </span>
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className="font-mono text-xs tracking-widest uppercase" style={{ color }}>
+            {post.category}
+          </span>
+          {post.tags?.map((tag) => (
+            <span
+              key={tag}
+              className="font-mono text-xs tracking-widest uppercase px-1.5 py-0.5 rounded"
+              style={{ color: "#fff", background: TAG_COLORS[tag] || "#333" }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
 
         <h2 className="font-grotesk text-lg md:text-xl text-cream tracking-wide mt-3 mb-3 leading-snug group-hover:text-white transition-colors">
           {post.title}
