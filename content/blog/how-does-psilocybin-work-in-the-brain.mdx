@@ -27,23 +27,23 @@ First-pass metabolism in the liver further processes psilocin, but a substantial
 
 <ConceptDiagram
   nodes={[
-    { id: "a", label: "Psilocybin (ingested)" },
-    { id: "b", label: "Alkaline phosphatase (gut/blood)" },
-    { id: "c", label: "Psilocin (active)" },
-    { id: "d", label: "5-HT2A agonism (cortex)" },
-    { id: "e", label: "DMN suppression + entropy increase" },
-    { id: "f", label: "BDNF release" },
-    { id: "g", label: "Neuroplasticity window (2–4 weeks)" },
-    { id: "h", label: "Integration → lasting change" }
+    { label: "Psilocybin (ingested)" },
+    { label: "Alkaline phosphatase (gut/blood)" },
+    { label: "Psilocin (active)" },
+    { label: "5-HT2A agonism (cortex)" },
+    { label: "DMN suppression + entropy increase" },
+    { label: "BDNF release" },
+    { label: "Neuroplasticity window (2-4 weeks)" },
+    { label: "Integration -> lasting change" }
   ]}
   connections={[
-    { from: "a", to: "b", label: "dephosphorylation" },
-    { from: "b", to: "c", label: "produces" },
-    { from: "c", to: "d", label: "binds" },
-    { from: "d", to: "e", label: "causes" },
-    { from: "e", to: "f", label: "triggers" },
-    { from: "f", to: "g", label: "opens" },
-    { from: "g", to: "h", label: "via" }
+    { from: 0, to: 1 },
+    { from: 1, to: 2 },
+    { from: 2, to: 3 },
+    { from: 3, to: 4 },
+    { from: 4, to: 5 },
+    { from: 5, to: 6 },
+    { from: 6, to: 7 }
   ]}
 />
 

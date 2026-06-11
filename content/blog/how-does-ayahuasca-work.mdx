@@ -47,21 +47,21 @@ Ayahuasca solves the oral delivery problem pharmacologically rather than by rout
 
 <ConceptDiagram
   nodes={[
-    { id: "caapi", label: "B. caapi vine\n(harmine / harmaline / THH)" },
-    { id: "mao", label: "MAO-A inhibition\nin gut and liver" },
-    { id: "viridis", label: "P. viridis leaves\n(DMT)" },
-    { id: "absorb", label: "DMT survives digestion\n→ enters bloodstream" },
-    { id: "bbb", label: "Blood-brain barrier\ncrossing" },
-    { id: "receptor", label: "5-HT2A + sigma-1\nreceptor binding" },
-    { id: "experience", label: "4–6 hour\nayahuasca experience" }
+    { label: "B. caapi vine (harmine / harmaline / THH)" },
+    { label: "MAO-A inhibition in gut and liver" },
+    { label: "P. viridis leaves (DMT)" },
+    { label: "DMT survives digestion, enters bloodstream" },
+    { label: "Blood-brain barrier crossing" },
+    { label: "5-HT2A + sigma-1 receptor binding" },
+    { label: "4-6 hour ayahuasca experience" }
   ]}
   connections={[
-    { from: "caapi", to: "mao", label: "harmine/harmaline block MAO" },
-    { from: "mao", to: "absorb", label: "DMT no longer destroyed" },
-    { from: "viridis", to: "absorb", label: "DMT source" },
-    { from: "absorb", to: "bbb", label: "systemic circulation" },
-    { from: "bbb", to: "receptor", label: "central nervous system entry" },
-    { from: "receptor", to: "experience", label: "sustained activation" }
+    { from: 0, to: 1 },
+    { from: 1, to: 3 },
+    { from: 2, to: 3 },
+    { from: 3, to: 4 },
+    { from: 4, to: 5 },
+    { from: 5, to: 6 }
   ]}
 />
 

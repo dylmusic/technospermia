@@ -51,7 +51,31 @@ Preclinical work, including research from David Olson's lab at UC Davis, has dir
 
 This means the brain is physically building new synaptic contact points during and after a psilocybin session. The neuroplasticity window — estimated at 2–4 weeks based on the trajectory of dendritic spine data — is not a metaphor. It is a period of elevated structural remodeling.
 
-<ConceptDiagram nodes={[{id: "a", label: "Psychedelic / Ketamine"}, {id: "b", label: "5-HT2A agonism (psychedelics) / NMDA antagonism (ketamine)"}, {id: "c", label: "BDNF release"}, {id: "d", label: "TrkB receptor activation"}, {id: "e", label: "Dendritic spine growth"}, {id: "f", label: "Synaptogenesis"}, {id: "g", label: "Neuroplasticity window opens"}, {id: "h", label: "Integration — therapy / experience / behavior"}, {id: "i", label: "New pattern consolidates"}, {id: "j", label: "Window closes"}]} connections={[{from: "a", to: "b", label: "triggers"}, {from: "b", to: "c", label: "induces"}, {from: "c", to: "d", label: "binds"}, {from: "d", to: "e", label: "drives"}, {from: "e", to: "f", label: "enables"}, {from: "f", to: "g", label: "opens"}, {from: "g", to: "h", label: "during"}, {from: "h", to: "i", label: "leads to"}, {from: "i", to: "j", label: "then"}]} />
+<ConceptDiagram
+  nodes={[
+    { label: "Psychedelic / Ketamine" },
+    { label: "5-HT2A agonism / NMDA antagonism" },
+    { label: "BDNF release" },
+    { label: "TrkB receptor activation" },
+    { label: "Dendritic spine growth" },
+    { label: "Synaptogenesis" },
+    { label: "Neuroplasticity window opens" },
+    { label: "Integration (therapy / experience)" },
+    { label: "New pattern consolidates" },
+    { label: "Window closes" }
+  ]}
+  connections={[
+    { from: 0, to: 1 },
+    { from: 1, to: 2 },
+    { from: 2, to: 3 },
+    { from: 3, to: 4 },
+    { from: 4, to: 5 },
+    { from: 5, to: 6 },
+    { from: 6, to: 7 },
+    { from: 7, to: 8 },
+    { from: 8, to: 9 }
+  ]}
+/>
 
 ## How ketamine opens the window
 

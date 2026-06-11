@@ -38,27 +38,27 @@ This hypothesis is Tier 2: it is based on real pharmacology and a plausible mech
 
 <ConceptDiagram
   nodes={[
-    { id: "a", label: "DMT" },
-    { id: "b", label: "5-HT2A receptor (cortex)" },
-    { id: "c", label: "Sigma-1 receptor (ER membrane)" },
-    { id: "d", label: "TAAR1 (trace amine system)" },
-    { id: "e", label: "Serotonergic cortical effects + DMN suppression" },
-    { id: "f", label: "Cellular stress response / neuroprotection / ER signaling" },
-    { id: "g", label: "Dopamine/serotonin modulation via TAAR1" },
-    { id: "h", label: "Parallel signal cascades" },
-    { id: "i", label: "Entity encounter phenomenology + protective cellular effects" }
+    { label: "DMT" },
+    { label: "5-HT2A receptor (cortex)" },
+    { label: "Sigma-1 receptor (ER membrane)" },
+    { label: "TAAR1 (trace amine system)" },
+    { label: "Serotonergic cortical effects + DMN suppression" },
+    { label: "Cellular stress response / neuroprotection" },
+    { label: "Dopamine/serotonin modulation" },
+    { label: "Parallel signal cascades" },
+    { label: "Entity encounter phenomenology" }
   ]}
   connections={[
-    { from: "a", to: "b", label: "full agonist" },
-    { from: "a", to: "c", label: "agonist" },
-    { from: "a", to: "d", label: "agonist" },
-    { from: "b", to: "e", label: "produces" },
-    { from: "c", to: "f", label: "activates" },
-    { from: "d", to: "g", label: "modulates" },
-    { from: "e", to: "h", label: "feeds" },
-    { from: "f", to: "h", label: "feeds" },
-    { from: "g", to: "h", label: "feeds" },
-    { from: "h", to: "i", label: "results in" }
+    { from: 0, to: 1 },
+    { from: 0, to: 2 },
+    { from: 0, to: 3 },
+    { from: 1, to: 4 },
+    { from: 2, to: 5 },
+    { from: 3, to: 6 },
+    { from: 4, to: 7 },
+    { from: 5, to: 7 },
+    { from: 6, to: 7 },
+    { from: 7, to: 8 }
   ]}
 />
 

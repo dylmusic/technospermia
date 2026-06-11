@@ -44,23 +44,23 @@ The dissociative effects — the sense of disconnection, altered perception of s
 
 <ConceptDiagram
   nodes={[
-    { id: "ketamine", label: "Ketamine infusion" },
-    { id: "nmda", label: "NMDA receptor blockade" },
-    { id: "disinhibit", label: "Glutamate activity shifts to AMPA receptors" },
-    { id: "bdnf", label: "BDNF released from neurons" },
-    { id: "trkb", label: "TrkB receptor activation" },
-    { id: "spine", label: "Rapid dendritic spine growth" },
-    { id: "synapse", label: "Synaptogenesis in prefrontal cortex" },
-    { id: "effect", label: "Restored synaptic connectivity — antidepressant effect" }
+    { label: "Ketamine infusion" },
+    { label: "NMDA receptor blockade" },
+    { label: "Glutamate shifts to AMPA receptors" },
+    { label: "BDNF released from neurons" },
+    { label: "TrkB receptor activation" },
+    { label: "Rapid dendritic spine growth" },
+    { label: "Synaptogenesis in prefrontal cortex" },
+    { label: "Restored synaptic connectivity" }
   ]}
   connections={[
-    { from: "ketamine", to: "nmda", label: "open-channel block" },
-    { from: "nmda", to: "disinhibit", label: "NMDA blocked → AMPA activated" },
-    { from: "disinhibit", to: "bdnf", label: "AMPA signaling triggers BDNF" },
-    { from: "bdnf", to: "trkb", label: "binds receptor" },
-    { from: "trkb", to: "spine", label: "downstream signaling" },
-    { from: "spine", to: "synapse", label: "new connections form" },
-    { from: "synapse", to: "effect", label: "prefrontal function restored" }
+    { from: 0, to: 1 },
+    { from: 1, to: 2 },
+    { from: 2, to: 3 },
+    { from: 3, to: 4 },
+    { from: 4, to: 5 },
+    { from: 5, to: 6 },
+    { from: 6, to: 7 }
   ]}
 />
 

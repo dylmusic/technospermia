@@ -48,21 +48,21 @@ The 12-hour duration of an LSD experience is primarily a property of receptor ki
 
 <ConceptDiagram
   nodes={[
-    { id: "lsd", label: "LSD molecule\n(microgram scale)" },
-    { id: "bind", label: "5-HT2A receptor\nbinding" },
-    { id: "lid", label: "Extracellular loop closes\n(lid mechanism)" },
-    { id: "beta", label: "Beta-arrestin\nrecruitment" },
-    { id: "internal", label: "Receptor internalized\nwith LSD inside" },
-    { id: "signal", label: "Prolonged intracellular\nsignaling" },
-    { id: "experience", label: "8–12 hour\nexperience" }
+    { label: "LSD molecule (microgram scale)" },
+    { label: "5-HT2A receptor binding" },
+    { label: "Extracellular loop closes (lid mechanism)" },
+    { label: "Beta-arrestin recruitment" },
+    { label: "Receptor internalized with LSD inside" },
+    { label: "Prolonged intracellular signaling" },
+    { label: "8-12 hour experience" }
   ]}
   connections={[
-    { from: "lsd", to: "bind", label: "high-affinity binding" },
-    { from: "bind", to: "lid", label: "structural closure" },
-    { from: "lid", to: "beta", label: "conformation change" },
-    { from: "beta", to: "internal", label: "receptor trafficking" },
-    { from: "internal", to: "signal", label: "sustained activation" },
-    { from: "signal", to: "experience", label: "cortical effects persist" }
+    { from: 0, to: 1 },
+    { from: 1, to: 2 },
+    { from: 2, to: 3 },
+    { from: 3, to: 4 },
+    { from: 4, to: 5 },
+    { from: 5, to: 6 }
   ]}
 />
 

@@ -43,22 +43,22 @@ This is why MDMA is classified as an **entactogen** or **empathogen** rather tha
 
 <ConceptDiagram
   nodes={[
-    { id: "mdma", label: "MDMA enters neuron" },
-    { id: "reverse", label: "SERT/DAT/NET reversal" },
-    { id: "flood", label: "Massive serotonin + dopamine + NE release" },
-    { id: "amygdala", label: "Amygdala fear response suppressed" },
-    { id: "oxytocin", label: "Oxytocin release from hypothalamus" },
-    { id: "state", label: "Empathogenic state + reduced threat perception" },
-    { id: "window", label: "Therapeutic window for trauma processing" }
+    { label: "MDMA enters neuron" },
+    { label: "SERT/DAT/NET reversal" },
+    { label: "Massive serotonin + dopamine + NE release" },
+    { label: "Amygdala fear response suppressed" },
+    { label: "Oxytocin release from hypothalamus" },
+    { label: "Empathogenic state + reduced threat perception" },
+    { label: "Therapeutic window for trauma processing" }
   ]}
   connections={[
-    { from: "mdma", to: "reverse", label: "binds transporters" },
-    { from: "reverse", to: "flood", label: "ejects monoamines" },
-    { from: "flood", to: "amygdala", label: "serotonin suppresses fear" },
-    { from: "flood", to: "oxytocin", label: "5-HT triggers hypothalamus" },
-    { from: "amygdala", to: "state", label: "reduced threat processing" },
-    { from: "oxytocin", to: "state", label: "trust + social bonding" },
-    { from: "state", to: "window", label: "opens therapeutic access" }
+    { from: 0, to: 1 },
+    { from: 1, to: 2 },
+    { from: 2, to: 3 },
+    { from: 2, to: 4 },
+    { from: 3, to: 5 },
+    { from: 4, to: 5 },
+    { from: 5, to: 6 }
   ]}
 />
 

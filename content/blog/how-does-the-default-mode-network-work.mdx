@@ -37,7 +37,27 @@ The DMN has four well-documented functions, all related to a single underlying t
 
 Each of these functions contributes to the same thing: the maintenance of a coherent, continuous self-narrative embedded in social and temporal context.
 
-<ConceptDiagram nodes={[{id: "mpfc", label: "Medial Prefrontal Cortex\n(self-evaluation)"}, {id: "pcc", label: "Posterior Cingulate Cortex\n(autobiographical memory & integration)"}, {id: "ag", label: "Angular Gyrus\n(social cognition & narrative)"}, {id: "hf", label: "Hippocampal Formation\n(memory retrieval)"}, {id: "conn", label: "Mutual Connectivity"}, {id: "narr", label: "Self-Narrative Construction"}, {id: "temp", label: "Temporal Integration\n(past & future)"}, {id: "self", label: "Continuous Sense of Self"}]} connections={[{from: "mpfc", to: "conn", label: "self-evaluation"}, {from: "pcc", to: "conn", label: "memory integration"}, {from: "ag", to: "conn", label: "social framing"}, {from: "hf", to: "conn", label: "episodic retrieval"}, {from: "conn", to: "narr", label: "coordinates"}, {from: "narr", to: "temp", label: "structures"}, {from: "temp", to: "self", label: "produces"}]} />
+<ConceptDiagram
+  nodes={[
+    { label: "Medial Prefrontal Cortex (self-evaluation)" },
+    { label: "Posterior Cingulate Cortex (autobiographical memory)" },
+    { label: "Angular Gyrus (social cognition)" },
+    { label: "Hippocampal Formation (memory retrieval)" },
+    { label: "Mutual Connectivity" },
+    { label: "Self-Narrative Construction" },
+    { label: "Temporal Integration (past & future)" },
+    { label: "Continuous Sense of Self" }
+  ]}
+  connections={[
+    { from: 0, to: 4 },
+    { from: 1, to: 4 },
+    { from: 2, to: 4 },
+    { from: 3, to: 4 },
+    { from: 4, to: 5 },
+    { from: 5, to: 6 },
+    { from: 6, to: 7 }
+  ]}
+/>
 
 ## The self as a constructed model
 
