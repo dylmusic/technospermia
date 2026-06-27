@@ -126,3 +126,312 @@ Dynamic: `https://www.technospermia.com/og?title=ENCODED_TITLE&category=CATEGORY
 
 ## vercel.json
 Only contains a redirect rule (non-www → www). No builds whitelist — Vercel auto-detects Next.js framework.
+
+---
+
+## Article index (300 articles — slug → title → category)
+
+> Auto-added for reference. Sitemap and blog listing are auto-generated from `getAllPosts()` — no manual updates needed when adding articles.
+
+| Slug | Title | Category |
+|------|-------|----------|
+| `ai-consciousness-question` | Is AI Conscious? The Question That Changes Everything | CONSCIOUSNESS |
+| `albert-hofmann-biography` | Albert Hofmann: The Man Who Discovered LSD and What He Believed It Meant | PHARMACOLOGY |
+| `aldous-huxley-biography` | Aldous Huxley: The Writer Who Mapped the Doors of Perception | CONSCIOUSNESS |
+| `alexander-shulgin-biography` | Alexander Shulgin: The Chemist Who Synthesized 200 Psychedelic Compounds | PHARMACOLOGY |
+| `alien-abduction-vs-dmt` | Alien Abduction Experiences and DMT: Are They the Same Phenomenon? | THEORY |
+| `ancient-aliens-fermi-question` | If Aliens Existed, Why Didn't They Visit the Ancient World? | ASTROBIOLOGY |
+| `ancient-aliens-real-evidence` | Ancient Aliens: Separating the Real Evidence From the TV Show | THEORY |
+| `ancient-mysteries-ranked-by-evidence` | Ancient Mysteries Ranked: What's Genuinely Unexplained vs What Isn't | HIDDEN HISTORY |
+| `ancient-psychedelic-use-evidence` | The Archaeological Evidence for Ancient Psychedelic Use | PHARMACOLOGY |
+| `animal-consciousness-science` | Animal Consciousness: Which Animals Are Conscious and How Do We Know? | CONSCIOUSNESS |
+| `are-aliens-real` | Are Aliens Real? What the Evidence Actually Shows in the UAP Era | ASTROBIOLOGY |
+| `are-aliens-real-what-science-says` | Are Aliens Real? What Science Actually Says | ASTROBIOLOGY |
+| `are-crop-circles-real` | Are Crop Circles Real? Separating the Phenomenon From the Explanation | HIDDEN HISTORY |
+| `are-magic-mushrooms-dangerous` | Are Magic Mushrooms Dangerous? What the Science Actually Shows | PHARMACOLOGY |
+| `are-near-death-experiences-real` | Are Near-Death Experiences Real? Examining the Evidence on Both Sides | CONSCIOUSNESS |
+| `are-psychedelics-addictive` | Are Psychedelics Addictive? What the Science Shows | PHARMACOLOGY |
+| `are-reptilians-real` | Are Reptilians Real? Tracing the Theory From Folklore to the Modern Conspiracy | HIDDEN HISTORY |
+| `are-uaps-a-national-security-threat` | Are UAPs a National Security Threat? The Question Driving the Investigations | HIDDEN HISTORY |
+| `are-ufos-real` | Are UFOs Real? What the Evidence Actually Shows | ASTROBIOLOGY |
+| `are-we-alone-in-the-universe` | Are We Alone in the Universe? What Science Actually Says | ASTROBIOLOGY |
+| `area-51-what-we-know` | Area 51: What We Actually Know and What Remains Secret | ASTROBIOLOGY |
+| `ayahuasca-vs-ibogaine` | Ayahuasca vs Ibogaine: Two Intensive Plant Medicines Compared | PHARMACOLOGY |
+| `ayahuasca-what-is-it` | What Is Ayahuasca? The Amazon's Most Sophisticated Psychedelic Technology | PHARMACOLOGY |
+| `beatles-lsd-music-consciousness` | The Beatles and LSD: How Psychedelics Changed Music and Consciousness | THEORY |
+| `best-arguments-against-simulation-theory` | Best Arguments Against Simulation Theory: Why Smart People Reject It | CONSCIOUSNESS |
+| `best-arguments-for-technospermia` | The Best Arguments for the Technospermia Theory — The Top 5 Strongest Points | THEORY |
+| `best-books-on-consciousness` | Best Books on Consciousness: The Reading List That Actually Changes How You Think | CONSCIOUSNESS |
+| `best-books-psychedelics-consciousness` | The Best Books on Psychedelics and Consciousness — A Ranked Reading List | THEORY |
+| `best-documentaries-on-consciousness` | Best Documentaries on Consciousness: Films That Go Where Mainstream Science Won't | CONSCIOUSNESS |
+| `best-documentaries-psychedelics-aliens` | The Best Documentaries on Psychedelics, Aliens, and Consciousness — Ranked | THEORY |
+| `best-evidence-aliens-exist` | The Best Evidence That Aliens Exist — Ranked by Scientific Credibility | ASTROBIOLOGY |
+| `best-evidence-consciousness-survives-death` | Best Evidence Consciousness Survives Death: What Science Has Actually Found | CONSCIOUSNESS |
+| `best-evidence-panspermia` | The Best Evidence for Panspermia — The Top 5 Scientific Findings | ASTROBIOLOGY |
+| `best-explanation-fermi-paradox` | The Best Explanation for the Fermi Paradox — All Solutions Ranked | ASTROBIOLOGY |
+| `best-explanation-for-overview-effect` | Best Explanation for the Overview Effect: What Actually Happens When Astronauts See Earth from Space | CONSCIOUSNESS |
+| `best-explanation-why-psychedelics-are-illegal` | The Best Explanation for Why Psychedelics Are Illegal — All Theories Ranked | THEORY |
+| `best-integration-practices-after-psychedelics` | Best Integration Practices After Psychedelics: What the Research Actually Recommends | PHARMACOLOGY |
+| `best-podcasts-psychedelics-aliens-consciousness` | The Best Podcasts on Psychedelics, Aliens, and Consciousness — Ranked | THEORY |
+| `best-psilocybin-strains` | Best Psilocybin Strains: A Complete Guide to Potency, Effects, and What the Differences Mean | PHARMACOLOGY |
+| `best-psychedelic-for-consciousness-research` | The Best Psychedelics for Consciousness Research — What Scientists Actually Use | PHARMACOLOGY |
+| `best-psychedelic-retreats-jamaica` | Best Psychedelic Retreats in Jamaica: What to Know Before You Book | PHARMACOLOGY |
+| `best-resources-psychedelic-harm-reduction` | Best Resources for Psychedelic Harm Reduction: What to Read, Watch, and Use Before You Go In | PHARMACOLOGY |
+| `best-theory-psychedelic-origins` | The Best Theory of Psychedelic Origins — Ranked and Explained | THEORY |
+| `best-uap-sightings-documented` | The Best Documented UAP Sightings: Cases That Changed the Conversation | ASTROBIOLOGY |
+| `best-way-to-prepare-for-ayahuasca` | Best Way to Prepare for Ayahuasca: What Actually Matters Before Your Ceremony | PHARMACOLOGY |
+| `big-pharma-psychedelics-conspiracy` | Big Pharma and Psychedelics: Why the Industry That Could Benefit Most Has Resisted the Most | THEORY |
+| `bob-lazar-and-area-51` | Bob Lazar and Area 51: The Claims, the Evidence, and What Can Actually Be Verified | HIDDEN HISTORY |
+| `bob-lazar-story-examined` | Bob Lazar: The Man Who Claimed to Reverse-Engineer Alien Technology | ASTROBIOLOGY |
+| `buddhism-psychedelics-connection` | Buddhism and Psychedelics: The Remarkable Overlap Between Ancient Practice and Modern Science | CONSCIOUSNESS |
+| `caffeine-60-plants-same-receptor` | Caffeine: 60+ Plants, One Receptor, Zero Explanation | PHARMACOLOGY |
+| `can-you-overdose-on-mushrooms` | Can You Overdose on Magic Mushrooms? What the Science Shows | PHARMACOLOGY |
+| `cancer-bad-guy-tech-theory` | What If Cancer Is Bad Guy Technology? The Dark Side of Technospermia | THEORY |
+| `cannabis-brain-science` | Cannabis and the Brain: What Science Actually Knows About How It Works | PHARMACOLOGY |
+| `cannabis-for-anxiety` | Cannabis for Anxiety: What the Research Actually Shows | PHARMACOLOGY |
+| `cannabis-vs-alcohol-science` | Cannabis vs Alcohol: What the Science Says About Which Is Actually More Harmful | PHARMACOLOGY |
+| `carl-sagan-cosmos-consciousness` | Carl Sagan, Cannabis, and Consciousness: The Astronomer Who Explored Inner Space | CONSCIOUSNESS |
+| `cia-lsd-experiments-history` | The CIA and LSD: The Complete History of America's Secret Psychedelic Program | THEORY |
+| `complete-guide-to-ayahuasca` | Ayahuasca: The Complete Guide to the Amazonian Vine Brew | PHARMACOLOGY |
+| `complete-guide-to-cannabis` | Cannabis: The Complete Guide to the Most Used Psychoactive Plant | PHARMACOLOGY |
+| `complete-guide-to-ibogaine` | Ibogaine: The Complete Guide to the 36-Hour Addiction Interrupter | PHARMACOLOGY |
+| `complete-guide-to-ketamine` | Ketamine: The Complete Guide to the Dissociative That Became a Therapy | PHARMACOLOGY |
+| `complete-guide-to-lsd` | LSD: The Complete Guide to Lysergic Acid Diethylamide | PHARMACOLOGY |
+| `complete-guide-to-mdma` | MDMA: The Complete Guide to the Empathogen | PHARMACOLOGY |
+| `complete-guide-to-mescaline` | Mescaline: The Complete Guide to the Oldest Psychedelic | PHARMACOLOGY |
+| `complete-history-psychedelics-timeline` | The Complete History of Psychedelics: A Timeline From Ancient Use to Modern Medicine | THEORY |
+| `consciousness-altered-states-types` | Altered States of Consciousness: A Complete Map of All Types and What They Reveal | CONSCIOUSNESS |
+| `consciousness-and-death-questions-ranked` | The Biggest Questions About Consciousness and Death, Honestly Answered | CONSCIOUSNESS |
+| `consciousness-suppression-theory` | The Consciousness Suppression Theory: Is Society Designed to Keep You Unaware? | THEORY |
+| `consciousness-vs-intelligence` | Consciousness vs Intelligence: The Distinction That Changes How We Think About AI | CONSCIOUSNESS |
+| `consciousness-what-is-it-really` | What Is Consciousness? Why the Hardest Question in Science Points to Technospermia | CONSCIOUSNESS |
+| `conspiracy-theory-vs-fact-psychedelics` | Psychedelic Conspiracy Theories: Which Are Real and Which Are Not | THEORY |
+| `could-aliens-already-be-here` | Could Aliens Already Be Here? The Hypotheses Scientists Actually Discuss | ASTROBIOLOGY |
+| `dark-forest-theory-explained` | The Dark Forest Theory: The Scariest Solution to the Fermi Paradox | ASTROBIOLOGY |
+| `dark-forest-vs-fermi-paradox` | Dark Forest Theory vs the Fermi Paradox: Which Explanation Fits the Evidence? | ASTROBIOLOGY |
+| `david-grusch-testimony-what-he-said` | David Grusch Testified Under Oath About Non-Human Craft. Here's Exactly What He Said. | ASTROBIOLOGY |
+| `deep-state-psychedelics-documented` | The Deep State and Psychedelics: What the Declassified Documents Actually Show | THEORY |
+| `did-aliens-build-the-pyramids` | Did Aliens Build the Pyramids? What Archaeology Actually Shows | ASTROBIOLOGY |
+| `did-shrooms-come-from-space` | Did Magic Mushrooms Come From Space? Here's What the Evidence Says | THEORY |
+| `did-weed-come-from-aliens` | Did Weed Come From Aliens? The Question Is Less Crazy Than It Sounds | THEORY |
+| `directed-panspermia-crick-orgel` | Directed Panspermia: Why the Co-Discoverer of DNA Thought Life Was Seeded on Purpose | ASTROBIOLOGY |
+| `dmt-entities-machine-elves` | DMT Entities and Machine Elves: What Are People Actually Encountering? | CONSCIOUSNESS |
+| `dmt-in-your-brain-what-it-means` | DMT Is Produced Inside Your Brain. What Does That Actually Mean? | PHARMACOLOGY |
+| `dmt-vs-psilocybin` | DMT vs Psilocybin: The Key Differences Explained | PHARMACOLOGY |
+| `do-plants-and-fungi-experience-anything` | Do Plants and Fungi Experience Anything? Consciousness at Life's Edges | CONSCIOUSNESS |
+| `does-consciousness-survive-death-evidence` | Does Consciousness Survive Death? The Evidence Examined | CONSCIOUSNESS |
+| `endocannabinoid-system-why-your-body-has-cannabis-receptors` | The Endocannabinoid System: Why Does Your Body Have Receptors Built for Cannabis? | PHARMACOLOGY |
+| `extraterrestrial-life-search-seti` | The Search for Extraterrestrial Life: What SETI Has Found and What It's Missing | ASTROBIOLOGY |
+| `fermi-paradox-psychedelic-answer` | The Fermi Paradox Has a Psychedelic Answer Nobody Is Talking About | ASTROBIOLOGY |
+| `fluoride-consciousness-conspiracy` | Fluoride and Consciousness: Separating the Science From the Conspiracy Theory | THEORY |
+| `francis-crick-biography` | Francis Crick: From DNA to Directed Panspermia to the Consciousness Problem | ASTROBIOLOGY |
+| `free-will-consciousness-science` | Free Will and Consciousness: What Science Actually Says | CONSCIOUSNESS |
+| `fungi-ancient-technology` | Fungi Predate Plants by 600 Million Years — Are They the Original Technology? | ASTROBIOLOGY |
+| `fungi-intelligence-network` | The Intelligence of Fungi: How Mycelium Networks Think, Communicate, and Remember | ASTROBIOLOGY |
+| `gordon-wasson-biography` | R. Gordon Wasson: The Banker Who Introduced Magic Mushrooms to the West | CONSCIOUSNESS |
+| `government-admits-aliens-real-uap-disclosure` | The Government Finally Admitted UFOs Are Real. Here's What That Actually Means. | ASTROBIOLOGY |
+| `government-suppressing-psychedelics-evidence` | Is the Government Suppressing Psychedelics? The Documented Evidence | THEORY |
+| `graham-hancock-theory-explained` | Graham Hancock's Theory Explained: Ancient Civilizations, Psychedelics, and What Mainstream Archaeology Ignores | THEORY |
+| `great-filter-are-we-past-it` | The Great Filter: Are We Past It — Or Is It Ahead of Us? | ASTROBIOLOGY |
+| `hard-problem-consciousness-explained` | The Hard Problem of Consciousness: Why It's the Most Important Unsolved Problem in Science | CONSCIOUSNESS |
+| `has-the-government-admitted-aliens-exist` | Has the Government Admitted Aliens Exist? What Officials Have Actually Said | HIDDEN HISTORY |
+| `history-of-cannabis-complete` | The Complete History of Cannabis: 12,000 Years of Human Relationship With a Remarkable Plant | PHARMACOLOGY |
+| `history-of-lsd-albert-hofmann` | The History of LSD: How Albert Hofmann's Accident Changed the World | PHARMACOLOGY |
+| `how-does-ayahuasca-work` | How Does Ayahuasca Work? The Pharmacology of the Two-Plant Brew | PHARMACOLOGY |
+| `how-does-dmt-work` | How Does DMT Work? The Mechanism Behind the Most Intense Psychedelic | PHARMACOLOGY |
+| `how-does-ketamine-work` | How Does Ketamine Work? The NMDA Mechanism That Changes Everything | PHARMACOLOGY |
+| `how-does-lsd-work` | How Does LSD Work? The Mechanism Behind the Most Potent Psychedelic | PHARMACOLOGY |
+| `how-does-mdma-work` | How Does MDMA Work? The Neuroscience of the Empathogen | PHARMACOLOGY |
+| `how-does-psilocybin-work-in-the-brain` | How Does Psilocybin Work in the Brain? The Neuroscience Explained | PHARMACOLOGY |
+| `how-does-the-default-mode-network-work` | How Does the Default Mode Network Work? The Brain's Self-System Explained | CONSCIOUSNESS |
+| `how-long-do-shrooms-last` | How Long Do Shrooms Last? The Complete Timeline | PHARMACOLOGY |
+| `how-to-find-a-psilocybin-retreat` | How to Find a Psilocybin Retreat: What to Look For and What to Avoid | PHARMACOLOGY |
+| `how-to-find-psychedelic-therapist` | How to Find a Psychedelic Therapist or Integration Specialist | PHARMACOLOGY |
+| `how-to-integrate-a-psychedelic-experience-deep` | How to Integrate a Psychedelic Experience: The Complete Practical Guide | PHARMACOLOGY |
+| `how-to-microdose-lsd` | How to Microdose LSD: Protocols, Doses, and What the Research Actually Shows | PHARMACOLOGY |
+| `how-to-prepare-for-ayahuasca` | How to Prepare for Ayahuasca: The Complete Pre-Ceremony Guide | PHARMACOLOGY |
+| `how-to-prepare-psychedelic-experience` | How to Prepare for a Psychedelic Experience: The Complete Guide | PHARMACOLOGY |
+| `how-to-support-someone-on-psychedelics` | How to Support Someone on Psychedelics: The Sitter's Practical Guide | PHARMACOLOGY |
+| `how-to-use-cannabis-for-anxiety` | How to Use Cannabis for Anxiety: What the Research Says and What Actually Works | PHARMACOLOGY |
+| `ibogaine-addiction-reset` | Ibogaine: The African Psychedelic That Resets Addiction in 36 Hours | PHARMACOLOGY |
+| `indigenous-plant-medicine-traditions` | Indigenous Plant Medicine Traditions: What Ancient Knowledge Reveals About Psychedelics | CONSCIOUSNESS |
+| `indigenous-psychedelic-traditions-world` | Indigenous Psychedelic Traditions Around the World: The Global Pattern | ASTROBIOLOGY |
+| `is-alien-abduction-real` | Is Alien Abduction Real? What the Research Shows About the Experience | CONSCIOUSNESS |
+| `is-area-51-hiding-aliens` | Is Area 51 Hiding Aliens? Separating the Documented From the Speculated | HIDDEN HISTORY |
+| `is-astral-projection-real` | Is Astral Projection Real? The Science of Out-of-Body Experiences | CONSCIOUSNESS |
+| `is-consciousness-an-illusion` | Is Consciousness an Illusion? What Neuroscience and Philosophy Actually Say | CONSCIOUSNESS |
+| `is-consciousness-fundamental` | Is Consciousness Fundamental to the Universe? The Case For and Against | CONSCIOUSNESS |
+| `is-dmt-in-the-brain` | Is DMT Really in the Human Brain? What the Research Shows | PHARMACOLOGY |
+| `is-free-will-real` | Is Free Will Real? What Neuroscience and Philosophy Actually Say | CONSCIOUSNESS |
+| `is-microdosing-a-placebo` | Is Microdosing Just a Placebo? What the Blinded Studies Show | PHARMACOLOGY |
+| `is-plant-consciousness-real` | Is Plant Consciousness Real? What the Science of Plant Intelligence Shows | CONSCIOUSNESS |
+| `is-psilocybin-too-precise-to-be-natural` | Is Psilocybin Too Precise To Be Natural? The Case for Engineered Consciousness Tech | PHARMACOLOGY |
+| `is-psychedelic-therapy-effective` | Is Psychedelic Therapy Effective? What the Clinical Trials Actually Show | PHARMACOLOGY |
+| `is-reincarnation-real` | Is Reincarnation Real? What the Research Actually Shows | CONSCIOUSNESS |
+| `is-telepathy-real` | Is Telepathy Real? What Parapsychology Research Actually Found | CONSCIOUSNESS |
+| `is-the-government-hiding-aliens` | Is the Government Hiding Aliens? Separating the Documented From the Speculated | HIDDEN HISTORY |
+| `is-the-pentagon-ufo-program-real` | Is the Pentagon UFO Program Real? What's Confirmed and What's Claimed | HIDDEN HISTORY |
+| `is-the-simulation-real` | Is the Simulation Real? The Strongest Evidence For and Against | CONSCIOUSNESS |
+| `is-the-stoned-ape-theory-true` | Is the Stoned Ape Theory True? What the Evidence Actually Shows | THEORY |
+| `is-the-war-on-drugs-a-failure` | Is the War on Drugs a Failure? What the Evidence Shows After Decades | HIDDEN HISTORY |
+| `is-there-life-after-death` | Is There Life After Death? What Science, Philosophy, and Evidence Say | CONSCIOUSNESS |
+| `joe-rogan-psychedelics-influence` | Joe Rogan and Psychedelics: How One Podcast Changed the Mainstream Conversation | THEORY |
+| `ketamine-therapy-depression` | Ketamine Therapy for Depression: The First Legal Psychedelic Medicine Explained | PHARMACOLOGY |
+| `ketamine-vs-psilocybin` | Ketamine vs Psilocybin: Which Is Better for Mental Health? | PHARMACOLOGY |
+| `life-after-death-what-science-says` | Life After Death: What Does Science Actually Say? | CONSCIOUSNESS |
+| `lsd-vs-dmt` | LSD vs DMT: The Two Most Intense Psychedelics Compared | PHARMACOLOGY |
+| `maria-sabina-biography` | Maria Sabina: The Mazatec Healer Who Changed the World | CONSCIOUSNESS |
+| `mdma-therapy-ptsd` | MDMA Therapy for PTSD: What the Phase 3 Trials Actually Showed | PHARMACOLOGY |
+| `mdma-vs-psilocybin` | MDMA vs Psilocybin: How Two Breakthrough Therapies Actually Differ | PHARMACOLOGY |
+| `meaning-of-life-consciousness` | The Meaning of Life: What Consciousness Research and Psychedelics Reveal | CONSCIOUSNESS |
+| `meditation-vs-psychedelics` | Meditation vs Psychedelics: What's the Difference and Which Is Better? | CONSCIOUSNESS |
+| `meditation-vs-psychedelics-deep` | Meditation vs Psychedelics: What the Neuroscience Actually Shows | CONSCIOUSNESS |
+| `mescaline-peyote-san-pedro` | Mescaline, Peyote, and San Pedro: The Cactus Psychedelics and What They Tell Us | PHARMACOLOGY |
+| `microdosing-psilocybin-science` | Microdosing Psilocybin: What the Science Actually Shows | PHARMACOLOGY |
+| `mkultra-cia-psychedelics-real-history` | MKUltra: The CIA's Real Psychedelic Experiments — What the Declassified Documents Show | THEORY |
+| `multiverse-theory-consciousness` | The Multiverse and Consciousness: If Infinite Universes Exist, What Does That Mean? | ASTROBIOLOGY |
+| `mystical-experience-science` | Mystical Experiences: What Science Has Learned About the Most Profound Human Event | CONSCIOUSNESS |
+| `nature-of-time-consciousness` | The Nature of Time and Consciousness: Why the Present Moment Is the Deepest Mystery | CONSCIOUSNESS |
+| `nde-vs-dmt-vs-psilocybin` | NDE vs DMT vs Psilocybin: Three Paths to the Same Place? | CONSCIOUSNESS |
+| `nde-vs-psilocybin-same-experience` | Near-Death Experiences and Psilocybin Produce the Same Experience. Why? | CONSCIOUSNESS |
+| `near-death-experience-what-is-it` | What Is a Near-Death Experience? What Science and Survivors Actually Say | CONSCIOUSNESS |
+| `non-human-intelligence-what-does-it-want` | If Non-Human Intelligence Is Real, What Does It Want? | THEORY |
+| `out-of-body-experience-science` | Out of Body Experiences: What Science Actually Knows | CONSCIOUSNESS |
+| `overview-effect-psilocybin-same-experience` | The Overview Effect and Psilocybin: Why Do Astronauts and Psychedelic Users Report the Same Experience? | CONSCIOUSNESS |
+| `panpsychism-explained` | Panpsychism: The Ancient Idea That Mainstream Philosophy Is Taking Seriously Again | CONSCIOUSNESS |
+| `panspermia-vs-directed-panspermia` | Panspermia vs Directed Panspermia: The Difference That Changes Everything | ASTROBIOLOGY |
+| `plant-consciousness-can-plants-think` | Can Plants Think? The Science of Plant Consciousness and Intelligence | ASTROBIOLOGY |
+| `psilocybin-dosage-guide` | Psilocybin Dosage Guide: What Different Amounts Actually Do | PHARMACOLOGY |
+| `psilocybin-fda-approval-timeline` | Psilocybin FDA Approval: Where Things Stand and What Comes Next | PHARMACOLOGY |
+| `psilocybin-for-alcoholism` | Psilocybin for Alcoholism: What the Research Actually Shows | PHARMACOLOGY |
+| `psilocybin-for-anxiety` | Psilocybin for Anxiety: What the Clinical Research Shows | PHARMACOLOGY |
+| `psilocybin-for-chronic-pain` | Psilocybin for Chronic Pain: What the Early Research Shows | PHARMACOLOGY |
+| `psilocybin-for-depression-guide` | Psilocybin for Depression: The Complete Guide to What the Research Shows | PHARMACOLOGY |
+| `psilocybin-for-eating-disorders` | Psilocybin for Eating Disorders: The Emerging Research | PHARMACOLOGY |
+| `psilocybin-for-end-of-life-anxiety` | Psilocybin for End-of-Life Anxiety: What the Clinical Research Shows | PHARMACOLOGY |
+| `psilocybin-for-grief` | Psilocybin for Grief: What the Research Shows About Loss and Healing | PHARMACOLOGY |
+| `psilocybin-for-ocd` | Psilocybin for OCD: What the Early Research Shows | PHARMACOLOGY |
+| `psilocybin-found-in-space-what-research-says` | Psilocybin Found in Space? What the Latest Research Actually Says | ASTROBIOLOGY |
+| `psilocybin-legal-states-guide` | Where Is Psilocybin Legal? The Complete State-by-State Guide | PHARMACOLOGY |
+| `psilocybin-microdose-protocol` | How to Microdose Psilocybin: The Complete Protocol Guide | PHARMACOLOGY |
+| `psilocybin-therapy-research` | Psilocybin Therapy: What the Research Actually Shows | PHARMACOLOGY |
+| `psilocybin-vs-antidepressants` | Psilocybin vs Antidepressants: What the Head-to-Head Research Shows | PHARMACOLOGY |
+| `psilocybin-vs-ayahuasca` | Psilocybin vs Ayahuasca: Which Is Right for You? | PHARMACOLOGY |
+| `psilocybin-vs-dmt` | Psilocybin vs DMT: Same Molecule, Completely Different Experience | PHARMACOLOGY |
+| `psilocybin-vs-lsd` | Psilocybin vs LSD: The Complete Comparison | PHARMACOLOGY |
+| `psychedelic-entity-encounters-research` | Psychedelic Entity Encounters: What the Research Actually Found | CONSCIOUSNESS |
+| `psychedelic-experience-what-to-expect` | What to Expect During a Psychedelic Experience: A Honest, Complete Guide | PHARMACOLOGY |
+| `psychedelic-harm-reduction-guide` | Psychedelic Harm Reduction: The Complete Safety Guide | PHARMACOLOGY |
+| `psychedelic-integration-guide` | Psychedelic Integration: What It Is and Why It Determines Everything | PHARMACOLOGY |
+| `psychedelic-renaissance-why-now` | The Psychedelic Renaissance: Why Is This Happening? | THEORY |
+| `psychedelic-retreat-guide` | Psychedelic Retreats: What They Are, What to Expect, and How to Choose One | PHARMACOLOGY |
+| `psychedelics-addiction-research` | Psychedelics and Addiction: The Surprising Research on What Actually Works | PHARMACOLOGY |
+| `psychedelics-and-art` | Psychedelics and Art: How Altered States Shaped Visual Culture | CONSCIOUSNESS |
+| `psychedelics-and-death` | Psychedelics and Death: What Happens When the Two Intersect | CONSCIOUSNESS |
+| `psychedelics-and-parenting` | Psychedelics and Parenting: The Conversation More Families Are Having | PHARMACOLOGY |
+| `psychedelics-and-relationships` | Psychedelics and Relationships: What Happens When One Partner Uses and the Other Doesn't | PHARMACOLOGY |
+| `psychedelics-and-religion` | Psychedelics and Religion: The Entheogen Hypothesis | CONSCIOUSNESS |
+| `psychedelics-and-the-internet` | Psychedelics and the Internet: How the Web Accelerated the Psychedelic Renaissance | CONSCIOUSNESS |
+| `psychedelics-and-the-sixties` | Psychedelics and the Sixties: How LSD Shaped a Decade and What It Left Behind | HIDDEN HISTORY |
+| `psychedelics-and-work` | Psychedelics and Work: The Practical Guide for Professionals | PHARMACOLOGY |
+| `psychedelics-creativity-science` | Psychedelics and Creativity: What the Research Actually Shows | PHARMACOLOGY |
+| `psychedelics-death-dying-research` | Psychedelics and Death: How Psilocybin Changes the Way People Die | PHARMACOLOGY |
+| `psychedelics-every-culture-same-time` | Every Ancient Culture Used Psychedelics. Why Did They All Find Them at the Same Time? | CONSCIOUSNESS |
+| `psychedelics-for-addiction-recovery` | Psychedelics for Addiction Recovery: The Complete Guide to What Works | PHARMACOLOGY |
+| `psychedelics-in-music-history` | Psychedelics and Music: How Consciousness-Expanding Compounds Shaped the Sound of the 20th Century | THEORY |
+| `psychedelics-mental-health-complete-guide` | Psychedelics and Mental Health: The Complete Guide to What the Research Shows | PHARMACOLOGY |
+| `psychedelics-neuroscience-brain-imaging` | Psychedelics and the Brain: What Neuroimaging Has Revealed | PHARMACOLOGY |
+| `psychedelics-spirituality-atheism` | Psychedelics and Atheism: What Happens When a Non-Believer Has a Mystical Experience | CONSCIOUSNESS |
+| `psychedelics-spirituality-science` | Psychedelics and Spirituality: What Science Says About the God Experience | CONSCIOUSNESS |
+| `psychedelics-trauma-healing` | Psychedelics and Trauma: How MDMA and Psilocybin Are Changing Trauma Treatment | PHARMACOLOGY |
+| `psychedelics-vs-antidepressants-deep` | Psychedelics vs Antidepressants: What the Head-to-Head Research Shows | PHARMACOLOGY |
+| `quantum-consciousness-explained` | Quantum Consciousness: What Is It and Why Do Serious Scientists Take It Seriously? | CONSCIOUSNESS |
+| `red-pill-consciousness-awakening` | The Red Pill and Consciousness Awakening: What Does It Actually Mean to Wake Up? | CONSCIOUSNESS |
+| `reincarnation-scientific-evidence` | Reincarnation: What the Scientific Research Actually Shows | CONSCIOUSNESS |
+| `rick-doblin-maps-story` | Rick Doblin and MAPS: The 35-Year Campaign to Make Psychedelics Medicine | THEORY |
+| `roswell-incident-what-really-happened` | Roswell: What Really Happened in 1947 and Why It Still Matters | ASTROBIOLOGY |
+| `set-and-setting-psychedelic-experience` | Set and Setting: Why the Same Drug Produces Completely Different Experiences | CONSCIOUSNESS |
+| `shared-death-experiences` | Shared Death Experiences: When the Healthy Report the Dying's Journey | CONSCIOUSNESS |
+| `silicon-valley-psychedelics-culture` | Silicon Valley and Psychedelics: How the Tech Industry Discovered Consciousness Technology | THEORY |
+| `simulation-theory-evidence` | Simulation Theory Evidence: The Strongest Arguments That Reality Is Computed | THEORY |
+| `simulation-theory-technospermia` | Simulation Theory Meets Technospermia: Are Psychedelics a Glitch in the Matrix? | THEORY |
+| `sleep-dreams-consciousness` | Sleep, Dreams, and Consciousness: What Happens to Your Mind Every Night | CONSCIOUSNESS |
+| `stanislaw-grof-biography` | Stanislav Grof: The Psychiatrist Who Mapped the Psychedelic Mind | CONSCIOUSNESS |
+| `steve-jobs-psychedelics-lsd` | Steve Jobs and LSD: What He Said and What It Meant | THEORY |
+| `stoned-ape-theory-full` | The Stoned Ape Theory: What Terence McKenna Actually Claimed and What the Science Says | THEORY |
+| `terence-mckenna-biography` | Terence McKenna: His Life, His Ideas, and His Lasting Influence | THEORY |
+| `terence-mckenna-theories-explained` | Terence McKenna's Best Theories — Ranked and Explained | THEORY |
+| `the-aguadilla-ufo-video` | The Aguadilla UFO Video: Infrared Footage That Has Not Been Conventionally Explained | ASTROBIOLOGY |
+| `the-anunnaki-explained` | The Anunnaki Explained: From Sumerian Texts to Modern Myth | HIDDEN HISTORY |
+| `the-belgian-ufo-wave` | The Belgian UFO Wave: The Case an Air Force Investigated and Could Not Explain | HIDDEN HISTORY |
+| `the-betty-and-barney-hill-abduction` | The Betty and Barney Hill Abduction: The Case That Defined the Modern Abduction Narrative | CONSCIOUSNESS |
+| `the-dogon-and-sirius-mystery` | The Dogon and Sirius: Examining the Famous Astronomical Mystery | HIDDEN HISTORY |
+| `the-hard-problem-and-death` | If Consciousness Isn't Made by the Brain, What Happens at Death? | CONSCIOUSNESS |
+| `the-kecksburg-incident` | The Kecksburg Incident: The Acorn-Shaped Object, the Military Retrieval, and the Missing Files | HIDDEN HISTORY |
+| `the-most-credible-ufo-cases-ranked` | The Most Credible UFO Cases Ranked: A Guide to the Best-Documented Encounters | HIDDEN HISTORY |
+| `the-nimitz-tic-tac-encounter` | The Nimitz Tic-Tac Encounter: What Actually Happened and What It Means | HIDDEN HISTORY |
+| `the-pascagoula-abduction` | The Pascagoula Abduction: Two Fishermen, a Sheriff's Hidden Recording, and an Unresolved Case | CONSCIOUSNESS |
+| `the-phoenix-lights-explained` | The Phoenix Lights Explained: Two Events, One Unforgettable Night | HIDDEN HISTORY |
+| `the-pyramids-around-the-world` | Why Are There Pyramids All Over the World? The Real Explanation | HIDDEN HISTORY |
+| `the-rendlesham-forest-incident` | The Rendlesham Forest Incident: Britain's Most Documented UFO Case | HIDDEN HISTORY |
+| `the-roswell-incident-explained` | The Roswell Incident Explained: What the Evidence Actually Shows | HIDDEN HISTORY |
+| `the-travis-walton-abduction` | The Travis Walton Abduction: The Most Investigated Missing-Person UFO Case | CONSCIOUSNESS |
+| `the-westall-ufo-sighting` | The Westall UFO Sighting: Australia's Most Witnessed Mass Sighting | HIDDEN HISTORY |
+| `the-zimbabwe-ariel-school-encounter` | The Zimbabwe Ariel School Encounter: Sixty-Two Children and the Case That Puzzled a Harvard Psychiatrist | CONSCIOUSNESS |
+| `timothy-leary-full-story` | Timothy Leary: The Full Story of the Man Who Changed Everything | THEORY |
+| `uap-disclosure-what-happens-next` | UAP Disclosure Is Accelerating. What Happens When It's Complete? | THEORY |
+| `universe-fine-tuned-consciousness` | The Universe Appears Fine-Tuned for Consciousness. What Does That Mean? | ASTROBIOLOGY |
+| `universe-intelligent-design-vs-evolution` | Intelligent Design vs Evolution: Why the Real Debate Is More Interesting Than Both Sides Admit | THEORY |
+| `walter-pahnke-good-friday-experiment` | The Good Friday Experiment: The Study That Proved Psychedelics Produce Mystical Experience | CONSCIOUSNESS |
+| `war-on-drugs-suppression-theory` | Was the War on Drugs Actually Suppression of Psychedelic Technology? | THEORY |
+| `what-are-the-nazca-lines` | The Nazca Lines: Why an Ancient People Drew Giant Figures Only Visible From Above | HIDDEN HISTORY |
+| `what-are-uap-orbs` | What Are UAP Orbs? The Most Common Sighting Pattern Examined | ASTROBIOLOGY |
+| `what-did-astronauts-see-in-space` | What Did Astronauts Actually See in Space? Sorting the Record From the Myth | ASTROBIOLOGY |
+| `what-do-psychedelics-reveal-about-death` | What Do Psychedelics Reveal About Death? The Research on Dying Without Dying | PHARMACOLOGY |
+| `what-does-a-bad-trip-feel-like` | What Does a Bad Trip Feel Like? What Research Says About Difficult Psychedelic Experiences | PHARMACOLOGY |
+| `what-does-a-mystical-experience-feel-like` | What Does a Mystical Experience Feel Like? The Phenomenology Research Actually Describes | CONSCIOUSNESS |
+| `what-does-ayahuasca-feel-like` | What Does Ayahuasca Feel Like? A Complete Description of the Experience | PHARMACOLOGY |
+| `what-does-dmt-feel-like` | What Does DMT Feel Like? Descriptions From Research and Thousands of Accounts | PHARMACOLOGY |
+| `what-does-ego-death-feel-like` | What Does Ego Death Feel Like? Clinical Accounts and What the Research Shows | CONSCIOUSNESS |
+| `what-does-ego-dissolution-feel-like` | What Does Ego Dissolution Feel Like? The Neuroscience of Losing Your Self | CONSCIOUSNESS |
+| `what-does-ibogaine-feel-like` | What Does Ibogaine Feel Like? The 36-Hour Experience the Research Describes | PHARMACOLOGY |
+| `what-does-ketamine-feel-like` | What Does Ketamine Feel Like? The Dissociative Experience Explained by Research | PHARMACOLOGY |
+| `what-does-mdma-feel-like` | What Does MDMA Feel Like? The Empathogen Experience and What the Neuroscience Shows | PHARMACOLOGY |
+| `what-does-mescaline-feel-like` | What Does Mescaline Feel Like? The Oldest Psychedelic Experience Described | PHARMACOLOGY |
+| `what-does-microdosing-feel-like` | What Does Microdosing Feel Like? What Research Participants Actually Report | PHARMACOLOGY |
+| `what-does-psilocybin-feel-like` | What Does Psilocybin Feel Like? A Honest Description of the Experience | PHARMACOLOGY |
+| `what-does-the-overview-effect-feel-like` | What Does the Overview Effect Feel Like? Astronaut Accounts and the Neuroscience Behind Them | CONSCIOUSNESS |
+| `what-happens-when-you-die` | What Happens When You Die? What Science Actually Knows | CONSCIOUSNESS |
+| `what-happens-when-you-die-science` | What Happens When You Die? What Science Actually Knows | CONSCIOUSNESS |
+| `what-if-drugs-came-from-space` | What If Drugs Came From Space? The Panspermia-Psychedelic Connection | THEORY |
+| `what-is-a-bad-trip` | What Is a Bad Trip? What Causes It, What It Feels Like, and How to Navigate It | PHARMACOLOGY |
+| `what-is-a-near-death-experience` | What Is a Near-Death Experience? The Complete Guide to NDEs | CONSCIOUSNESS |
+| `what-is-dmt-complete-guide` | What Is DMT? The Complete Guide to the Most Mysterious Molecule in Nature | PHARMACOLOGY |
+| `what-is-ego-death` | What Is Ego Death? The Complete Guide to What Happens and Why It Matters | CONSCIOUSNESS |
+| `what-is-ego-dissolution-psychedelics` | Ego Dissolution on Psychedelics: What Happens in the Brain and Why It Heals | PHARMACOLOGY |
+| `what-is-gobekli-tepe` | Göbekli Tepe: The Temple That Rewrote Human History | HIDDEN HISTORY |
+| `what-is-neuroplasticity` | What Is Neuroplasticity? And Why Psychedelics Trigger It | PHARMACOLOGY |
+| `what-is-project-blue-book` | What Was Project Blue Book? The Government's First UFO Investigation | HIDDEN HISTORY |
+| `what-is-psilocybin-complete-guide` | What Is Psilocybin? The Complete Guide to the Most Studied Psychedelic | PHARMACOLOGY |
+| `what-is-psychedelic-renaissance` | What Is the Psychedelic Renaissance? A Complete Guide to What's Happening and Why | THEORY |
+| `what-is-psychospermia` | What Is Psychospermia? The Theory That Consciousness Is the Universe's Most Valuable Export | THEORY |
+| `what-is-technospermia` | What Is Technospermia? The Theory That's Changing How People Think About Consciousness | THEORY |
+| `what-is-terminal-lucidity` | What Is Terminal Lucidity? The Unexplained Clarity Before Death | CONSCIOUSNESS |
+| `what-is-the-antikythera-mechanism` | The Antikythera Mechanism: The Ancient Computer That's Actually Real | HIDDEN HISTORY |
+| `what-is-the-grusch-testimony` | The Grusch Testimony Explained: What Was Actually Claimed Under Oath | HIDDEN HISTORY |
+| `what-percentage-of-uap-are-unexplained` | What Percentage of UAP Are Actually Unexplained? What the Investigations Show | HIDDEN HISTORY |
+| `what-to-do-after-a-bad-trip` | What to Do After a Bad Trip: A Practical Recovery and Integration Guide | PHARMACOLOGY |
+| `what-was-the-condon-report` | What Was the Condon Report? The Scientific Review That Closed Project Blue Book | HIDDEN HISTORY |
+| `what-would-disclosure-actually-mean` | What Would Real Disclosure Actually Mean? The Scenarios and Their Consequences | ASTROBIOLOGY |
+| `what-would-happen-if-aliens-made-contact` | What Would Happen If Aliens Made Contact? The Scenarios Science Takes Seriously | ASTROBIOLOGY |
+| `where-did-psilocybin-come-from` | Where Did Psilocybin Come From? The Science, the Mystery, and the Theory | PHARMACOLOGY |
+| `where-did-psychedelics-come-from` | Where Did Psychedelics Come From? The Full Story From Evolution to Alien Theory | PHARMACOLOGY |
+| `who-benefits-psychedelics-illegal` | Who Benefits From Psychedelics Being Illegal? Following the Money | THEORY |
+| `who-built-the-pyramids` | Who Really Built the Pyramids? The Evidence Behind the Greatest Monuments | HIDDEN HISTORY |
+| `why-are-psychedelics-schedule-one` | Why Are Psychedelics Schedule I? The Decision That Shaped Fifty Years of Policy | HIDDEN HISTORY |
+| `why-do-people-see-entities-on-dmt` | Why Do People See Entities on DMT? What the Research Actually Shows | CONSCIOUSNESS |
+| `why-do-psychedelics-cause-ego-death` | Why Do Psychedelics Cause Ego Death? The Neuroscience Explanation | CONSCIOUSNESS |
+| `why-do-psychedelics-feel-spiritual` | Why Do Psychedelics Feel Spiritual? The Neuroscience of Sacred Experience | CONSCIOUSNESS |
+| `why-is-consciousness-hard-to-explain` | Why Is Consciousness So Hard to Explain? The Hard Problem Simply Put | CONSCIOUSNESS |
+| `why-is-dmt-illegal` | Why Is DMT Illegal? The Scheduling Decision That Defies Its Own Logic | HIDDEN HISTORY |
+| `why-is-the-government-disclosing-ufos-now` | Why Is the Government Disclosing UFOs Now? The Forces Behind the Shift | HIDDEN HISTORY |
