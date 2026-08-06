@@ -3,6 +3,7 @@
 import { useEffect, type ReactNode } from "react"
 import { motion, useReducedMotion } from "framer-motion"
 import { trackEvent } from "@/lib/analytics"
+import Logo from "./Logo"
 
 interface HeroProps {
   articleRow?: ReactNode
@@ -43,6 +44,13 @@ export default function Hero({ articleRow }: HeroProps) {
       {/* Title area — flex-1 so it takes remaining space and centers its content */}
       <div className="flex-1 flex items-center justify-center relative z-10 w-full">
         <div className="space-y-4">
+          <motion.div
+            {...fade(0)}
+            className="flex justify-center mb-2"
+          >
+            <Logo size={84} glow />
+          </motion.div>
+
           <motion.h1
             {...fade(0.3)}
             className="font-grotesk font-bold leading-none tracking-[0.08em]"

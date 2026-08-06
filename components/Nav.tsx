@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
+import Logo from "./Logo"
 
 const links = [
   { href: "/", label: "The Theory" },
@@ -59,8 +60,9 @@ export default function Nav() {
       >
         <Link
           href="/"
-          className="font-grotesk text-xs tracking-[0.25em] uppercase text-cream opacity-80 hover:opacity-100 transition-opacity"
+          className="flex items-center gap-2.5 font-grotesk text-xs tracking-[0.25em] uppercase text-cream opacity-80 hover:opacity-100 transition-opacity"
         >
+          <Logo size={24} withRing={false} withStars={false} withRays={false} />
           TECHNOSPERMIA
         </Link>
 
