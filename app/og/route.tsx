@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og"
 import type { NextRequest } from "next/server"
+import Logo from "@/components/Logo"
 
 export const runtime = "edge"
 
@@ -76,20 +77,29 @@ export async function GET(request: NextRequest) {
             }}
           />
 
-          {/* Top-left site name */}
+          {/* Top-left site mark */}
           <div
             style={{
               position: "absolute",
-              top: "44px",
+              top: "36px",
               left: "56px",
-              fontFamily: "SpaceGrotesk",
-              fontSize: "12px",
-              fontWeight: 700,
-              color: "rgba(255,255,255,0.3)",
-              letterSpacing: "0.38em",
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
             }}
           >
-            TECHNOSPERMIA.COM
+            <Logo size={26} withRing={false} withStars={false} withRays={false} />
+            <div
+              style={{
+                fontFamily: "SpaceGrotesk",
+                fontSize: "12px",
+                fontWeight: 700,
+                color: "rgba(255,255,255,0.3)",
+                letterSpacing: "0.38em",
+              }}
+            >
+              TECHNOSPERMIA.COM
+            </div>
           </div>
 
           {/* Center content */}

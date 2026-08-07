@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og"
 import { readFileSync } from "fs"
 import { join } from "path"
+import Logo from "@/components/Logo"
 
 export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"
@@ -83,6 +84,10 @@ export default function Image() {
             gap: "0px",
           }}
         >
+          <div style={{ display: "flex", marginBottom: "18px" }}>
+            <Logo size={100} withRing withStars withRays />
+          </div>
+
           <div
             style={{
               fontFamily: "SpaceGrotesk",

@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Space_Grotesk, Inter, Space_Mono } from "next/font/google"
 import { Suspense } from "react"
 import { GoogleAnalytics } from "@next/third-parties/google"
@@ -120,6 +120,23 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 }
 
+export const viewport: Viewport = {
+  themeColor: "#000000",
+}
+
+const ORGANIZATION = {
+  "@type": "Organization",
+  "@id": `${BASE_URL}/#organization`,
+  name: "Technospermia",
+  url: BASE_URL,
+  logo: {
+    "@type": "ImageObject",
+    url: `${BASE_URL}/icon-512`,
+    width: 512,
+    height: 512,
+  },
+}
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -128,9 +145,11 @@ const jsonLd = {
       "@id": `${BASE_URL}/#website`,
       url: BASE_URL,
       name: "Technospermia",
+      publisher: { "@id": `${BASE_URL}/#organization` },
       description:
         "A speculative theory proposing that psychedelics, fungi, and consciousness-altering plants are engineered biological technologies seeded across the universe.",
     },
+    ORGANIZATION,
     {
       "@type": "Article",
       "@id": `${BASE_URL}/#article`,
@@ -143,11 +162,7 @@ const jsonLd = {
         "@type": "Person",
         name: "Dylan Rhodes",
       },
-      publisher: {
-        "@type": "Organization",
-        name: "Technospermia",
-        url: BASE_URL,
-      },
+      publisher: { "@id": `${BASE_URL}/#organization` },
       datePublished: "2026-05-24",
       dateModified: "2026-05-24",
       url: BASE_URL,

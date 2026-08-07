@@ -73,6 +73,12 @@ export default async function BlogPostPage({
       "@type": "Organization",
       name: "Technospermia",
       url: "https://www.technospermia.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.technospermia.com/icon-512",
+        width: 512,
+        height: 512,
+      },
     },
     datePublished: meta.date,
     dateModified: meta.date,
