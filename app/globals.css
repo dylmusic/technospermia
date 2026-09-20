@@ -96,3 +96,18 @@ body {
     scroll-behavior: auto;
   }
 }
+
+/* Promo banner sheen sweep */
+@keyframes promo-sheen {
+  0%   { transform: translateX(-100%); }
+  55%  { transform: translateX(100%); }
+  100% { transform: translateX(100%); }
+}
+
+.promo-sheen {
+  animation: promo-sheen 5.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .promo-sheen { animation: none; }
+}

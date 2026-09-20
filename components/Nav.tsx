@@ -48,8 +48,9 @@ export default function Nav() {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10"
+        className="fixed left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10"
         style={{
+          top: "var(--promo-h, 0px)",
           height: "64px",
           background: scrolled ? "rgba(0,0,0,0.65)" : "transparent",
           backdropFilter: scrolled ? "blur(16px)" : "none",
@@ -119,7 +120,7 @@ export default function Nav() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="fixed inset-0 z-40 flex flex-col items-center justify-center md:hidden"
-            style={{ background: "rgba(0,0,0,0.97)" }}
+            style={{ background: "rgba(0,0,0,0.97)", paddingTop: "var(--promo-h, 0px)" }}
           >
             {/* Shimmer stars */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">

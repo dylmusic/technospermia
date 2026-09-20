@@ -25,7 +25,7 @@ export default function Hero({ articleRow }: HeroProps) {
   return (
     <section
       className="relative flex flex-col items-center text-center px-6"
-      style={{ minHeight: "100svh" }}
+      style={{ minHeight: "calc(100svh - var(--promo-h, 0px))" }}
     >
       {/* Violet glow behind title */}
       <div

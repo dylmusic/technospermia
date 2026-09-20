@@ -4,7 +4,9 @@ import { Suspense } from "react"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import "./globals.css"
 import Nav from "@/components/Nav"
+import PromoBanner from "@/components/PromoBanner"
 import StarfieldWrapper from "@/components/StarfieldWrapper"
+import { PROMO_OFFSET } from "@/lib/promo"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -186,12 +188,18 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>
+      <body style={{ "--promo-h": PROMO_OFFSET } as React.CSSProperties}>
         <Suspense fallback={null}>
           <StarfieldWrapper />
         </Suspense>
+        <PromoBanner />
         <Nav />
-        <main className="relative z-10 min-h-screen">{children}</main>
+        <main
+          className="relative z-10 min-h-screen"
+          style={{ paddingTop: "var(--promo-h, 0px)" }}
+        >
+          {children}
+        </main>
       </body>
       <GoogleAnalytics gaId="G-6R6ZK7CNKX" />
     </html>
