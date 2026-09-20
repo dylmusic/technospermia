@@ -10,16 +10,16 @@ const override = process.env.NEXT_PUBLIC_PROMO_BANNER
 
 export const PROMO = {
   /** ◀── MASTER SWITCH. false hides the bar everywhere. */
-  enabled: false,
+  enabled: true,
 
   headline: "BUY $LSD NOW",
   subhead: "OFFICIAL TECHNOSPERMIA TOKEN",
   cta: "BUY NOW",
   contractLabel: "Contract Address",
-  contractAddress: "XXXXXXX",
+  contractAddress: "FARnPtp5iuQRz7sqSnJrZxacmEwkTF28Wr5vyCYSpump",
 
   /** Where BUY NOW points. Leave "#" until the listing is live. */
-  buyUrl: "#",
+  buyUrl: "https://pump.fun/coin/FARnPtp5iuQRz7sqSnJrZxacmEwkTF28Wr5vyCYSpump",
 
   /** Bar height in px — drives the nav offset and hero height. */
   height: 44,
