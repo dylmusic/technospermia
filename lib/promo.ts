@@ -10,7 +10,7 @@ const override = process.env.NEXT_PUBLIC_PROMO_BANNER
 
 export const PROMO = {
   /** ◀── MASTER SWITCH. false hides the bar everywhere. */
-  enabled: true,
+  enabled: false,
 
   headline: "BUY $LSD NOW",
   subhead: "OFFICIAL TECHNOSPERMIA TOKEN",
