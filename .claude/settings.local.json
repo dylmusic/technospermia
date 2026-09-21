@@ -10,7 +10,13 @@
       "Bash(/opt/homebrew/bin/node --version)",
       "Bash(/usr/local/bin/node --version)",
       "Bash(brew search *)",
-      "Bash(brew install *)"
+      "Bash(brew install *)",
+      "Bash(xxd /Users/dylanrhodes/Documents/technospermia/public/fonts/SpaceGrotesk-Bold.ttf)",
+      "Bash(git -C /Users/dylanrhodes/Documents/technospermia status)",
+      "Bash(git -C /Users/dylanrhodes/Documents/technospermia log --oneline -5)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
